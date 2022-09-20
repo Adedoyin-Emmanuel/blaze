@@ -19,7 +19,7 @@
 
 
 	<h4 class="text-capitalize text-center my-5 p-5">welcome to blaze</h4>
-	<div class="splash_screen my-4 d-flex align-items-center p-3 justify-content-center" >
+	<div class="splash_screen my-5 d-flex align-items-center p-3 justify-content-center" >
 	<div class="dot-pulse text-danger d-none" id="pulseSpinner">
 		
 	</div>
