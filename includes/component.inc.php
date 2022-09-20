@@ -77,8 +77,8 @@
 	<script>
 		
 		window.addEventListener("load",()=>{
-			let $spinner = $("#spinner");
-				$spinner.addClass("d-none");
+			let $spinner = $("#spinner") || document.getElementById("spinner");
+				$spinner.style.display="none";
 		});	
 
 	</script>

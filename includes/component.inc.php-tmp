@@ -1,0 +1,8 @@
+
+Fatal error: Uncaught Error: Call to undefined function each() in C:\Users\Ronnie\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php:54
+Stack trace:
+#0 C:\Users\Ronnie\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php(41): AddMissingCurlyBraces->addBraces('\t\t<meta charset...')
+#1 C:\Users\Ronnie\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php(326): AddMissingCurlyBraces->format('\t\t<meta charset...')
+#2 C:\Users\Ronnie\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php(1736): CodeFormatter->formatCode('\t\t<meta charset...')
+#3 {main}
+  thrown in C:\Users\Ronnie\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php on line 54
