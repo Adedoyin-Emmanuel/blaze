@@ -23,7 +23,7 @@
 	<div class="dot-pulse text-danger d-none" id="pulseSpinner">
 		
 	</div>
-		<img src="logo.png" class="img-fluid logo" height="80" width="80" id="logoImg">
+		<img src="logo.png" class="img-fluid logo" height="90" width="90" id="logoImg">
 
 	</div>
 	<button class="text-capitalize text-center btn btn-dark bg-dark-c my-5 " id="getStarted">
