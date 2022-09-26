@@ -7,6 +7,9 @@
 		<script src="components/sweetAlert2.js"></script>
 		<script src="components/jquery.js"></script>
 		<script src="components/bootstrap.js"></script>
+		<script src="components/typingEffect.js"></script>
+
+
 		<link rel="stylesheet" type="text/css" href="components/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="components/msgConfig.css">
 		<link rel="stylesheet" type="text/css" href="components/three-dots.css">

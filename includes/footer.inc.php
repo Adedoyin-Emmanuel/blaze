@@ -6,7 +6,7 @@
 <br/>
 <br/>
 <br/>
-<footer class="footer text-capitalize w-100 bg-dark  text-center  p-3 rounded-3" style="border:none; outline:none;">
+<footer class="footer text-capitalize w-100 bg-dark  text-center  p-3 rounded-3" style="border:none; outline:none; ">
 
 <h5 class="text-center text-capitalize fs-4 text-danger py-2" id="footerText">EmmySoft ⚡</h5>
 
