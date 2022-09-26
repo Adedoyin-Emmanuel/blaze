@@ -57,7 +57,7 @@
                             
           
         <div class="img-container col p-3 " id="img_container">
-                <img src="logo.png" height="400" width="400" class="img-fluid rounded">
+                <img src="logo.png" height="400" width="400" class="img-fluid rounded" id="logo_legit">
         </div>
             
         <div class="text-container col  p-3 text-center">
