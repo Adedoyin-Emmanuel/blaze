@@ -67,7 +67,7 @@
 	    }
 
 	    #spinner{
-				background: #121117;
+				background: ghostwhite;
 				height: 100vh;
 				width: 100%;
 				position: fixed;
