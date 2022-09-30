@@ -24,7 +24,7 @@
 		    src: url(components/poppins.ttf);
 		}
 		body{
-			background: #221230;
+			
 			background:ghostwhite;
 
 			color:black;
