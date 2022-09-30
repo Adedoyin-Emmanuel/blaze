@@ -50,7 +50,7 @@
 
     </div>
 
-<div class="container-fluid text-light">
+<div class="container-fluid text-dark">
 
 <div class="row d-flex my-4  flex-md-row" id="content-contain">
 

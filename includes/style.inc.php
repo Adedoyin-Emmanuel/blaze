@@ -7,6 +7,9 @@
 	body {
 		background: #221230;
 		color: white;
+		background: ghostwhite;
+
+		color:black;
 
 	}
 
