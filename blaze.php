@@ -42,6 +42,7 @@
 </head>
 
 <body>
+    <?php require_once("includes/nav.inc.php")?>
 
     <div  id="spinner" class="">
 
@@ -51,8 +52,9 @@
     </div>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid m-auto py-3">
 
+                <h4 class="fs-4 text-capitalize text-center my-5">welcome to blaze</h4>
 
     </div>
 

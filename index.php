@@ -9,7 +9,7 @@
 	<title>Blaze</title>
 </head>
 
-<body class="container-fluid p-0 d-flex align-items-center justify-content-center m-auto flex-column" id="body">
+<body class="container-fluid p-0 d-flex align-items-center justify-content-center m-auto flex-column" id="body" style="background: lightskyblue;">
 
 	<div  id="spinner" class="">
 
