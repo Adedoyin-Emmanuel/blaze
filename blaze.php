@@ -84,7 +84,7 @@
 
                 <section class="use_blaze text-capitalize" id="section">
 
-                  <form class="p-5 bg-transparent rounded-3  m-auto form" method="post" action="" id="form" autocomplete="off" enctype="multipart/form-data">
+                  <form class="p-5  rounded-3  m-auto form" method="post" action="" id="form" autocomplete="off" enctype="multipart/form-data">
             <h4 class="fs-4 text-center text-capitalize py-2">Blaze Setup⚡</h4>
             <div class="text-light fw-2 text-center d-flex align-items-center justify-content-center m-auto rounded-3 p-2 d-none" id="error_alert" style="background: tomato; ">
                 <!-- *This is an error message* -->
