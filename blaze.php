@@ -69,7 +69,7 @@
 
 
     <div class="container-fluid m-auto py-5">
-
+        <button class="btn btn-secondary text-center rounded-3 my-2"><a href="homePage.php" class="text-decoration-none text-light "><strong>&lt; &lt;</strong></a></button>
                 <h4 class="fs-4 text-capitalize text-center my-5">get to know blaze <img src="logo.png" style="width:60px;"></h4>
 
                 <section class="text-capitalize p-4 my-3 m-auto section">
