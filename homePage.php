@@ -53,7 +53,7 @@
     </style>
 </head>
 
-<body id="body">
+<body id="body" >
 
     <?php require_once "includes/nav.inc.php";?>
     <div  id="spinner" class="">
