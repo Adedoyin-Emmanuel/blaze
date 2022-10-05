@@ -308,6 +308,7 @@
         $sideNav.removeClass("bg-primary");
         $sideNav.css({"background":"#121117", "color":"#fff"});
         $("#form").addClass("bg-dark");
+        $("#form").css({"border":"none"});
         // $(".input").css({"-webkit-box-shadow": "0 0 0 30px #343a40  inset !important"});
         $mainBody.css({"background":"#121117", "color":"#fff"});
 
@@ -331,7 +332,8 @@
         
         document.body.style.background = "azure";
         $("#form").removeClass("bg-dark");
-        $("#form").css({"background":"lightblue"});
+        $("#form").addClass("shadow-sm");
+        $("#form").css({"border":"1px solid black"});
         // $(".input").css({"-webkit-box-shadow": "0 0 0 30px azure inset !important"});
         $mainBody.css({"background":"azure", "color":"#000"});
 

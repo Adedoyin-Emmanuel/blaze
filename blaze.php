@@ -89,17 +89,15 @@
             <div class="text-light fw-2 text-center d-flex align-items-center justify-content-center m-auto rounded-3 p-2 d-none" id="error_alert" style="background: tomato; ">
                 <!-- *This is an error message* -->
             </div>
-            <div class="form-group my-4">
-                <label for="productName" class="text-capitalize py-2">Operating System</label>
-                <input type="text" name="productName" class="form-control text-light text-capitalize rounded-3 input" id="productName" placeholder="Enter product name" autocomplete="off" required />
-            </div>
+      
             <div class="form-group my-4">
                   <label for="operatingSystem" class="text-capitalize py-2">Select your operating system</label>
-                  <select class="form-control text-light" id="sel1" style="background: #343a40 ">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+                  <select class="form-control text-light" id="sel1" style="background: #343a40 " name="operating_system">
+                    <option class="px-2 text-capitalize text-center" value="0">-SELECT-</option>
+                    <option class="px-2 text-capitalize " value="1">windows OS</option>
+                    <option class="px-2 text-capitalize " value="2">Linux OS</option>
+                    <option class="px-2 text-capitalize " value="3">Chromebook OS</option>
+                    <option class="px-2 text-capitalize " value="4">Mac OS</option>
                   </select>
             </div>
 
