@@ -181,7 +181,7 @@
 <!-- </ul> -->
 </div>
 <li class="nav-item  m-auto text-center d-md-none">
-    <h5 class="text-capitalize py-2 text-light">Blaze  <img src="./logo.png" width="40px"></h5>
+    <div class="text-capitalize py-2 text-light fs-5">Blaze  <img src="./logo.png" width="40px"></div>
   </li>
 </ul>
 <!-- big screen nav -->
