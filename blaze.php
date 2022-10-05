@@ -93,7 +93,7 @@
             <div class="form-group my-4">
                   <label for="operatingSystem" class="text-capitalize py-2">Select your operating system</label>
                   <select class="form-control text-light" id="sel1" style="background: #343a40 " name="operating_system">
-                    <option class="option px-2 text-capitalize text-center" value="0">-SELECT-</option>
+                    <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
                     <option class="option px-2 text-capitalize " value="1">windows OS</option>
                     <option class="option px-2 text-capitalize " value="2">Linux OS</option>
                     <option class="option px-2 text-capitalize " value="3">Chromebook OS</option>
