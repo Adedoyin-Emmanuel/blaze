@@ -6,15 +6,17 @@
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
 
-<footer class="footer text-capitalize text-dark w-100   text-center  p-3 rounded-3" style="border:none; outline:none; background: lightblue;">
+<footer class="footer text-capitalize text-dark w-100   text-center  p-3 rounded-3" style="border:none; outline:none; background: lightblue;" id="footer">
 
 <h5 class="text-center text-capitalize fs-4 text-danger py-2" id="footerText">EmmySoft ⚡</h5>
 
-<section class="footer_text p-2 text-dark" id="footer_text">
+<section class="footer_text p-2 " id="footer_text">
 	<a class="text-danger text-capitalize text-decoration-none" href="#body">Blaze</a> is one of the several projects built for the programmers day. Explore. Have Fun.
 	
-	<span class="my_name text-dark d-block my-2 fs-6" id="my_name" style="font-weight:600;">-Emmysoft Tech</span>
+	<span class="my_name d-block my-2 fs-6" id="my_name" style="font-weight:600;">-Emmysoft Tech</span>
 
 	<div class="social_icons d-flex align-items-center justify-content-between  my-3 my-md-1" id="social_icons" >
 		

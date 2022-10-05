@@ -68,14 +68,40 @@
       list-style-type: none;
     }
 
+    ul > li.nav-item:hover {
+        background: lightblue;
+        outline: none;
+        border-radius: 23px;
+        border: none;
+        cursor: pointer;
+
+
+    }
+
+    ul > li > a.nav-link: hover{
+      border: none;
+      outline: none;
+    }
+    ul > li > a.nav-link{
+      border: none;
+      padding: 12px;
+      outline: none;
+      margin: auto;
+
+    }
+
+    .bg-cs{
+      background: lightskyblue;
+    }
+
 
 </style>
 <nav class="hor-nav w-100  " style="position:fixed; width:100%; z-index:1000;">
 
 
-<ul class="nav  d-flex align-items-start justify-content-start px-3" style=" background: lightblue;">
-<span class="bg-dark text-light text-center p-1 my-1  rounded-3 d-md-none" style="cursor:pointer; width:40px; height:40px; font-size:20px; background: lightblue;" onclick="openNav()">&#9776</span>
-<div id="mySidenav" class="sidenav bg-dark">
+<ul class="nav d-flex align-items-start justify-content-start px-3" style=" background: lightblue;">
+<span class="                                                                           text-light text-center p-1 my-1  rounded-3 d-md-none" style="cursor:pointer; width:40px; height:40px; font-size:20px; background: gray;" onclick="openNav()">&#9776</span>
+<div id="mySidenav" class="sidenav bg-primary">
   
   <a href="javascript:void(0)" class="closebtn  text-center text-danger" onclick="closeNav()">&times;</a>
 
@@ -87,6 +113,7 @@
 
 
         <li class="nav-item py-3 ">
+
 
 
         
@@ -114,8 +141,8 @@
     Docs</a>
   </li>
  
-   <li class="nav-item py-3">
-    <a class="nav-link text-capitalize text-light px-3" id="mode" href="#">
+   <li class="nav-item py-3 modes" id="mode">
+    <a class="nav-link text-capitalize text-light px-3"  href="#">
 
 
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lamp mx-2" viewBox="0 0 16 16">
@@ -159,9 +186,12 @@
 </ul>
 <!-- big screen nav -->
 <ul class="nav nav-tabs d-flex align-items-center justify-content-around big_screen_nav d-sm-none d-md-flex" style="background: lightskyblue;">
+    <a class="navbar-brand text-light px-2" href="homePage.php">
+                     <img src="logo.png" alt="blaze logo" style="width:60px;">
+                 </a>
 
             <li class="nav-item big_screen">
-                  <a class="nav-link  text-capitalize text-light">
+                  <a class="nav-link  text-capitalize text-light" style="border:none; outline:none">
 
                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house text-light mx-2" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
@@ -171,7 +201,7 @@
             </li>
 
             <li class="nav-item big_screen">
-                  <a class="nav-link  text-capitalize text-light">
+                  <a class="nav-link  text-capitalize text-light"  style="border:none; outline:none">
 
                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book mx-2" viewBox="0 0 16 16">
                     <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
@@ -180,7 +210,7 @@
             </li>
 
               <li class="nav-item big_screen">
-                  <a class="nav-link  text-capitalize text-light">
+                  <a class="nav-link  text-capitalize text-light" style="border:none; outline:none">
 
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -197,8 +227,8 @@
                   Docs</a>
             </li>
 
-              <li class="nav-item big_screen">
-                  <a class="nav-link  text-capitalize text-light">
+              <li class="nav-item big_screen modes">
+                  <a class="nav-link  text-capitalize text-light" style="border:none; outline:none">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lamp mx-2" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M5.04.303A.5.5 0 0 1 5.5 0h5c.2 0 .38.12.46.303l3 7a.5.5 0 0 1-.363.687h-.002c-.15.03-.3.056-.45.081a32.731 32.731 0 0 1-4.645.425V13.5a.5.5 0 1 1-1 0V8.495a32.753 32.753 0 0 1-4.645-.425c-.15-.025-.3-.05-.45-.08h-.003a.5.5 0 0 1-.362-.688l3-7ZM3.21 7.116A31.27 31.27 0 0 0 8 7.5a31.27 31.27 0 0 0 4.791-.384L10.171 1H5.83L3.209 7.116Z"/>
@@ -208,7 +238,7 @@
             </li>
 
               <li class="nav-item big_screen">
-                  <a class="nav-link  text-capitalize text-light">
+                  <a class="nav-link  text-capitalize text-light" style="border:none; outline:none">
 
                            
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share mx-2" viewBox="0 0 16 16">
@@ -252,5 +282,101 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
+
+
+
+    
+
+    $(document).ready(($)=>{
+
+
+    function darkMode(){
+
+
+
+
+          //get all the elements
+        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav");
+
+      
+        let $footer = $("#footer");
+        let $footer_desc =  $("#footer_text");
+
+        
+        let $sideNav = $("#mySidenav");
+        $sideNav.addClass("text-light");
+        $sideNav.removeClass("bg-primary");
+        $sideNav.css({"background":"#121117", "color":"#fff"});
+        
+        $mainBody.css({"background":"#121117", "color":"#fff"});
+
+              
+    }
+
+
+    function lightMode(){
+
+
+
+
+          //get all the elements
+        let $mainBody = $(".container-fluid, .container #body, #heading_typing, .quick-desc, #nd_type, .sidenav");
+
+        let $sideNav = $("#mySidenav");
+        
+        $sideNav.addClass("text-light");
+        $sideNav.addClass("bg-primary");
+
+        
+
+        $mainBody.css({"background":"azure", "color":"#000"});
+
+      
+    }
+
+
+
+       setInterval(()=>{
+
+           let $mode = localStorage.getItem("ModeToggle") || "light";
+       
+            if($mode === "dark"){
+
+              darkMode();
+              
+            }else{
+              lightMode();
+            }
+
+       },100);
+
+        $(".modes, #mode").click(()=>{
+         $mode = localStorage.getItem("ModeToggle");
+             if($mode === "dark"){
+
+              darkMode();
+              localStorage.setItem("ModeToggle", "light");
+              //location.reload();
+              
+            }else{
+
+              lightMode();
+              localStorage.setItem("ModeToggle", "dark");
+              //location.reload();
+            }
+
+                                
+        });
+
+
+
+
+
+
+
+
+    });
+
+
 
 </script>
