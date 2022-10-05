@@ -98,9 +98,9 @@
                 </section>
         </div>
 
-        <div class="faqs">
+        <div class="faqs my-4 py-4">
 
-            <h5 class="text-capitalize fs-5">frequently asked questions (FAQ's)</h5>
+            <h5 class="text-capitalize fs-5 my-4">frequently asked questions (FAQ's)</h5>
 
 
 <!--  -->
