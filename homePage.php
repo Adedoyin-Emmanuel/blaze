@@ -77,7 +77,7 @@
 
  <h3 class="text-capitalize py-4 m-auto text-center m-auto" id="heading_typing">blaze <img class="img-fluid text-center" src="logo.png" height="40" width="50"></h3>
                 
-                            <article class="text-capitalize m-auto py-3 quick-desc">
+                            <article class="text-capitalize m-auto py-3 quick-desc" id="article">
                                 blaze is a free web application that is built for developers to <code class=" fs-6 rounded-1 p-1 text-primary text-danger">BOOTSTRAP</code> development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥
                             </article>
                

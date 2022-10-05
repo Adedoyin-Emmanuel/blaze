@@ -296,7 +296,7 @@
 
 
           //get all the elements
-        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav");
+        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article");
 
       
         let $footer = $("#footer");
@@ -320,7 +320,7 @@
 
 
           //get all the elements
-        let $mainBody = $(".container-fluid, .container #body, #heading_typing, .quick-desc, #nd_type, .sidenav");
+        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article");
 
         let $sideNav = $("#mySidenav");
         
@@ -328,7 +328,7 @@
         $sideNav.addClass("bg-primary");
 
         
-
+        document.body.style.background = "azure";
         $mainBody.css({"background":"azure", "color":"#000"});
 
       

@@ -9,7 +9,7 @@
 <br/>
 <br/>
 
-<footer class="footer text-capitalize text-dark w-100   text-center  p-3 rounded-3" style="border:none; outline:none; background: lightblue;" id="footer">
+<footer class="footer text-capitalize text-dark w-100   text-center  p-3 rounded-3 py-5" style="border:none; outline:none; background: lightblue;" id="footer">
 
 <h5 class="text-center text-capitalize fs-4 text-danger py-2" id="footerText">EmmySoft ⚡</h5>
 
