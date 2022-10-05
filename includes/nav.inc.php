@@ -296,7 +296,7 @@
 
 
           //get all the elements
-        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section, .option");
+        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section, .option, h1, h2, h3, h4, h5, h6, #btn-toggle, .card");
 
       
         let $footer = $("#footer");
@@ -322,7 +322,7 @@
 
 
           //get all the elements
-        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section, .option");
+        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section, .option, h1, h2, h3, h4, h5, h6, #btn-toggle, .card");
 
         let $sideNav = $("#mySidenav");
         

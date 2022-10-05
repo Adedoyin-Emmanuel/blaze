@@ -89,7 +89,7 @@
             <div class="text-light fw-2 text-center d-flex align-items-center justify-content-center m-auto rounded-3 p-2 d-none" id="error_alert" style="background: tomato; ">
                 <!-- *This is an error message* -->
             </div>
-      
+      <!-- operating system -->
             <div class="form-group my-4">
                   <label for="operatingSystem" class="text-capitalize py-2">Select your operating system</label>
                   <select class="form-control text-light" id="sel1" style="background: #343a40 " name="operating_system">
@@ -101,12 +101,20 @@
                   </select>
             </div>
 
-            <div class="form-group my-4">
-                <label for="productDescription" class="text-capitalize py-2">product description</label>
-                <input type="text" name="productDesc" class="form-control text-light text-start text-capitalize input" style="background:#343a40;" id="productDesc"  placeholder="Enter product description." autocomplete="off" required />
+          <!-- code editor -->
+             <div class="form-group my-4">
+                 <label for="productDescription" class="text-capitalize py-2">Select Text / Code Editor</label>
                 
-            </div>
+                  <select class="form-control text-light" id="sel1" style="background: #343a40 " name="operating_system">
+                    <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
 
+                    <option class="option px-2 text-capitalize " value="1">Visual studio (VS Code) </option>
+                    <option class="option px-2 text-capitalize " value="2">Sublime Text</option>
+                    <option class="option px-2 text-capitalize " value="3">Bracket</option>
+                    <option class="option px-2 text-capitalize " value="4">Notepad ++</option>
+                    <option class="option px-2 text-capitalize " value="4">Notepad</option>
+                  </select>
+            </div>
             <div class="form-group my-4">
                 <label for="productPicture" class="text-capitalize py-2">product picture</label>
                 <input type="file" name="productImg" class="form-control text-light" style="background: #343a40;" id="productImg" required>
@@ -116,7 +124,7 @@
                 
                     <button class="btn btn-danger text-center text-capitalize" name="submit" id="submit">
                     <span class="spinner-border spinner-border-sm  bg-primary d-none" id="spinner"></span>  
-                    add product
+                    Generate Blaze File
                     </button>
                 
 

@@ -98,6 +98,55 @@
                 </section>
         </div>
 
+        <div class="faqs">
+
+            <h5 class="text-capitalize fs-5">frequently asked questions (FAQ's)</h5>
+
+
+<!--  -->
+            <div>
+                
+
+
+
+
+            <!-- faq -->
+          
+              <button class="btn bg-transparent border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="btn-toggle">
+                What is blaze ? <span class="fs-6">&gt;</span>
+              </button>
+          
+            <div class="collapse my-2" id="collapseExample">
+              <div class="card card-body text-capitalize">
+                blaze is a free web application that is built for developers to bootstrap  development.
+              </div>
+            </div>
+
+
+        <!-- faq 2 -->
+
+             <button class="btn bg-transparent border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" id="btn-toggle">
+                Is Blaze Free ? <span class="fs-6">&gt;</span>
+              </button>
+          
+            <div class="collapse my-2" id="collapseExample2">
+              <div class="card card-body text-capitalize">
+                There would always be a free version of Blaze 😋
+              </div>
+            </div>
+
+
+
+
+
+
+
+            </div>
+
+
+            
+        </div>
+
 </div>
 
        
