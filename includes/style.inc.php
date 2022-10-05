@@ -58,14 +58,14 @@
 	}
 
 
-	@media (min-width:667.98px) {
-		.form {
-			width: 50%
+
+
+	@media (min-width:667.98px){
+		.form{
+			width:50%
 		}
 
-	
-
-
+		
 	}
 
 	#searchProduct,

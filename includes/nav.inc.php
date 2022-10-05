@@ -296,7 +296,7 @@
 
 
           //get all the elements
-        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article");
+        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section");
 
       
         let $footer = $("#footer");
@@ -308,6 +308,7 @@
         $sideNav.removeClass("bg-primary");
         $sideNav.css({"background":"#121117", "color":"#fff"});
         
+        // $(".input").css({"-webkit-box-shadow": "0 0 0 30px #343a40  inset !important"});
         $mainBody.css({"background":"#121117", "color":"#fff"});
 
               
@@ -320,7 +321,7 @@
 
 
           //get all the elements
-        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article");
+        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section");
 
         let $sideNav = $("#mySidenav");
         
@@ -329,6 +330,8 @@
 
         
         document.body.style.background = "azure";
+
+        // $(".input").css({"-webkit-box-shadow": "0 0 0 30px azure inset !important"});
         $mainBody.css({"background":"azure", "color":"#000"});
 
       
