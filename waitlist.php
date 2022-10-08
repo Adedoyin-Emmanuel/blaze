@@ -38,12 +38,12 @@
                                  
           
         <div class="img-container col p-3 " id="img_container">
-                <img src="images/waitlistLogo.png" height="" width="530" class="img-fluid bg-transparent" id="logo_legit">
+                <img src="images/waitlist.png" height="" width="550" class="img-fluid bg-transparent" id="logo_legit">
         </div>
             
         <div class="text-container col  p-3 ">
 
- <h3 class="text-capitalize py-1 m-auto text-center m-auto" id="heading_typing">Join waitlist<img class="img-fluid text-center" src="logo.png" height="40" width="50"></h3>
+ <h3 class="text-capitalize py-1 m-auto text-center m-auto my-3" id="heading_typing">Join waitlist<img class="img-fluid text-center" src="logo.png" height="40" width="50"></h3>
                 
                             <article class="text-capitalize py-3 quick-desc m-auto" id="article">
                                 
@@ -60,7 +60,8 @@
 
                                
                                 <label for="email" class="py-2 text-capitalize text-center px-5">enter your email:</label>
-                                 <input type="email" name="" class=" m-auto rounded m-control w-75 p-2 px-2 text-light text-sm " placeholder="enter your email" name="email" id="waitlist">
+                             <!--     <input type="email" name="" class=" m-auto rounded m-control w-75 p-2 px-2 text-light text-sm " placeholder="enter your email" name="email" id="waitlist"> -->
+                             <input type="email" class="form-control form m-auto w-75 p-3 px-4 text-light small" id="exampleFormControlInput1" placeholder="name@example.com" name="email" id="waitlist">
                                    
 
                                  <button class="btn btn-primary text-capitalize my-3 form m-auto">join waitlist</button>
