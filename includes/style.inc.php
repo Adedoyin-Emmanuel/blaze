@@ -68,6 +68,44 @@
 		
 	}
 
+	    @media (max-width:567.98px) {
+    
+        .img_small{
+            
+        }
+
+
+        #content-contain{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #img_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        ul > li.nav-item:hover {
+            background: lightblue;
+            outline: none;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        ul > li > a: hover{
+          border: none;
+          outline: none;
+        }
+
+
+
+    }
+
 	#searchProduct,
 	.form-control {
 		border: none;

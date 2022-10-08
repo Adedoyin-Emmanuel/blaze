@@ -105,7 +105,7 @@
   
   <a href="javascript:void(0)" class="closebtn  text-center text-danger" onclick="closeNav()">&times;</a>
 
-  <h4 class="text-capitalize text-center text-light">Blaze <img src="./logo.png" width="40px"></h4> 
+  <h4 class="text-capitalize text-center bg-transparent " id="nav_text_sm" style="color: white;">Blaze <img src="./logo.png" width="40px"></h4> 
      <!--  <ul>
  --> 
  <br/>
@@ -309,6 +309,13 @@
         $sideNav.css({"background":"#121117", "color":"#fff"});
         $("#form").addClass("bg-dark");
         $("#form").css({"border":"none"});
+
+        $("#waitlist").removeClass("text-dark");
+        $("#waitlist").addClass("text-light");
+        $("#waitlist").removeClass("bg-light");
+        $("#waitlist").addClass("bg-dark");
+
+       // $(".accordion-item").css({"background":"#121117", "color":"#fff"});
         // $(".input").css({"-webkit-box-shadow": "0 0 0 30px #343a40  inset !important"});
         $mainBody.css({"background":"#121117", "color":"#fff"});
 
@@ -327,11 +334,18 @@
         let $sideNav = $("#mySidenav");
         
         $sideNav.addClass("text-light");
+        $sideNav.css({"color":"white"});
         $sideNav.addClass("bg-primary");
 
-        
+        $("#nav_text_sm").css({"color":"white","background":"none"});
+        $("#nav_text_sm").addClass("text-light"); 
         document.body.style.background = "azure";
         $("#form").removeClass("bg-dark");
+        $("#waitlist").removeClass("text-light");
+        $("#waitlist").addClass("text-dark");
+        $("#waitlist").removeClass("bg-dark");
+        $("#waitlist").addClass("bg-light");
+
         $("#form").addClass("shadow-sm");
         $("#form").css({"border":"1px solid black"});
         // $(".input").css({"-webkit-box-shadow": "0 0 0 30px azure inset !important"});
