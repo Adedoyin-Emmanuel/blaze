@@ -35,8 +35,6 @@
 <div class="row d-flex py-5  flex-md-row" id="content-contain">
 
 
-                                 
-          
         <div class="img-container col p-3 " id="img_container">
                 <img src="images/waitlist.png" height="" width="550" class="img-fluid bg-transparent" id="logo_legit">
         </div>
@@ -48,7 +46,7 @@
                             <article class="text-capitalize py-3 quick-desc m-auto" id="article">
                                 
                              <span class="text-capitalize text-center m-auto d-block">
-                                    do you want to be the first to try out blaze and its never ending benefit ? if yes, join the waitlist now
+                                    do you want to be the first to try out blaze and its never ending benefits ? if yes, join the waitlist now
 
                              </span>
 
@@ -61,7 +59,7 @@
                                
                                 <label for="email" class="py-2 text-capitalize text-center px-5">enter your email:</label>
                              <!--     <input type="email" name="" class=" m-auto rounded m-control w-75 p-2 px-2 text-light text-sm " placeholder="enter your email" name="email" id="waitlist"> -->
-                             <input type="email" class="form-control form m-auto w-75 p-3 px-4 text-light small" id="exampleFormControlInput1" placeholder="name@example.com" name="email" id="waitlist">
+                             <input type="email" class="form-control form m-auto w-75 p-3 px-4 text-dark small" id="exampleFormControlInput1" placeholder="name@example.com" name="email" id="waitlist"required>
                                    
 
                                  <button class="btn btn-primary text-capitalize my-3 form m-auto">join waitlist</button>

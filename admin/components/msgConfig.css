@@ -1,0 +1,15 @@
+.swal-container{
+	background:#212529;
+	color:white;
+}
+
+.swal2-modal,.swal-container,.swal2-toast,.swal2-toast-shown{
+	background:#212529;
+	color:white;
+}
+
+.swal2-title,.swal2-html-container{
+	color:white;
+}
+
+
