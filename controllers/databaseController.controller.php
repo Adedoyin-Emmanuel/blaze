@@ -33,13 +33,15 @@
 
 
 				try{
-					$this->serverName = "localhost";
+					$this->serverName = "containers-us-west-95.railway.app";
 					$this->userName   = "root";
-					$this->password   = "";
-					$this->database   = "blaze_waitlist";
+					$this->password   = "6XxEYPSIpaEVQTSsqp3n";
+					$this->database   = "railway";
+					$this->port       = 5864;
 
 
-					$this->conn = new mysqli($this->serverName,$this->userName,$this->password, $this->database);
+
+					$this->conn = new mysqli($this->serverName,$this->userName,$this->password, $this->database,$this->port);
 				}catch(Exception $e){
 					die("An error occured while establishing connection".$e->getMessage());
 				}
