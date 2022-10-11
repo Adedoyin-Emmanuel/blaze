@@ -36,7 +36,7 @@ if(isset($_SESSION["login"])){
 </head>
 <body class="container-fluid p-0">
 
-	<?php require_once "../includes/nav.inc.php"?>
+	<?php require_once "../includes/adminNav.inc.php"?>
 	
 		<div  id="spinner" class="">
 

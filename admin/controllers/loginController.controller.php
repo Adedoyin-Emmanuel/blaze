@@ -50,6 +50,25 @@
 				die("username or password can't be empty");
 			}
 		}
+
+
+		#create a method to get the Admin details from the dbase
+		public function get_admin_info(){
+			$this->get_admin_info_sql = "SELECT * FROM blaze_admin";
+			$this->get_admin_info_result = $this->conn->query($this->get_admin_info_sql);
+
+			#check if the query was successful
+			if($this->get_admin_info_result == TRUE){
+
+				if($this->get_admin_info_result->num_rows > 0){
+					return true;
+				}else{
+					return "couldn't get the admin info";
+				}
+			}else{
+					return "an error occured";
+			}
+		}
 	}
 
 

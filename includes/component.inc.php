@@ -45,7 +45,7 @@
 		  ::-webkit-scrollbar-thumb{
 		    border-radius:20px;
 		    opacity:.7;
-		    background: #dc3545;
+		    background: lightblue;
 		    width:2px;
 		  }
 

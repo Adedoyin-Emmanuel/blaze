@@ -38,10 +38,12 @@ if(!isset($_SESSION["login"])){
         <link rel="icon"  href="../logo.png">
 
     <script src="includes/getWaitlist.inc.js"></script>
+    <script src="includes/getAdminDetails.inc.js"></script>
+    <script src="includes/sendBulkEmail.inc.js"></script>
 </head>
 <body class="container-fluid p-0">
 
-	<?php require_once "../includes/nav.inc.php"?>
+	<?php require_once "includes/adminNav.inc.php"?>
 	
 		<div  id="spinner" class="">
 
@@ -50,13 +52,13 @@ if(!isset($_SESSION["login"])){
 		</div>
 
 
-		<div class="p-4">
+		<div class="p-3">
 		
 			<div class="row d-flex py-5  flex-md-row" id="content-contain">
 
 	
 			<div class="section">
-				<h3 class="text-capitalize text-center fs-3">Welcome, Admin</h3>
+				<h3 class="text-capitalize text-center fs-3" id="welcome_header">Welcome,</h3>
 
 				<h5 class="text-capitalize my-3 fs-5">select a task to perform below</h5>
 
@@ -104,20 +106,21 @@ if(!isset($_SESSION["login"])){
 				*This is an error message*
 			</div>
 			<div class="form-group my-4">
-				<label for="username" class="text-capitalize py-2">Admin's Email</label>
-				<input type="text" name="username" class="form-control text-light  rounded-2"  id="productName" placeholder="Admin's email" autocomplete="off" required />
+				<label for="admin_email" class="text-capitalize py-2">Admin's Email</label>
+				<input type="text" name="admin_email" class="form-control text-light  rounded-2"  id="admin_email" placeholder="Admin's email" autocomplete="off" required value="adedoyine535@gmail.com" />
 			</div>
 
 			<div class="form-group my-4">
-				<label for="password" class="text-capitalize py-2">Email Header</label>
-				<input type="text" name="password" class="form-control text-light text-start p-3" style="background:#343a40;" id="password"  placeholder="Enter email header" autocomplete="off" required />
+				<label for="email_header" class="text-capitalize py-2">Email Header/Subject</label>
+				<input type="text" name="email_header" class="form-control text-light text-start p-3" style="background:#343a40;" id="email_header"  placeholder="Enter email header" autocomplete="off" required value="Adedoyin Emmanuel (Senior Developer) @ Blaze"/>
 				
 			</div>
 
 			<div class="form-group my-4">
-				<label for="password" class="text-capitalize py-2">Email Body</label>
-				<input type="text" name="password" class="form-control text-light text-start p-3" style="background:#343a40;" id="password"  placeholder="Enter email body" autocomplete="off" required />
-				
+				<label for="email_body" class="text-capitalize py-2">Email Body</label>
+			
+
+				<textarea placeholder="Email body" rows="3"  class="textarea my-2 form-control  text-light text-small" style="background:#343a40;" autocomplete="off" name= "email_body" required></textarea>
 			</div>
 
 		
