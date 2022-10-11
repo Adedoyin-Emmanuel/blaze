@@ -2,7 +2,6 @@
 
 require_once "../includes/session.inc.php";
 
-$_COOKIE["login"] = $_SESSION["login"];
 
 if(!isset($_SESSION["login"])){
 	echo '<script>location.href="login.php";</script>';	
