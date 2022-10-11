@@ -27,8 +27,6 @@
 
 
 
-
-
 			public function __construct(){
 
 
