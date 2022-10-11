@@ -31,10 +31,10 @@
 
 
 				try{
-					$this->serverName = "containers-us-west-95.railway.app";
-					$this->userName   = "root";
-					$this->password   = "6XxEYPSIpaEVQTSsqp3n";
-					$this->database   = "railway";
+					$this->serverName = "localhost";
+					$this->userName   = "id19691524_blaze_admin";
+					$this->password   = "Z{rdWe|zQSf9[}(c";
+					$this->database   = "id19691524_blaze";
 					$this->port       = 5864;
 
 

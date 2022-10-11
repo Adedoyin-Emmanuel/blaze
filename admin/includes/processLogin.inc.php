@@ -17,7 +17,7 @@ if($login_result == 1){
 	echo "welcome chief, login successful";
 	require_once "../../includes/session.inc.php";
 	setcookie("login", true, time() + (86400 * 30), "/");
-	$_SESSION["login"] = true;
+	$_SESSION["login"] = $_COOKIE["login"];
 
 	
 
