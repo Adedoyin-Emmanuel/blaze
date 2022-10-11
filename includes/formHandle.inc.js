@@ -24,7 +24,7 @@ $(document).ready(($) => {
                         icon: "error",
                         allowOutsideClick: false,
                         showCancelButton: true,
-
+                        position:"center"
 
 
                     })
