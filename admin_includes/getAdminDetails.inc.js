@@ -14,13 +14,14 @@ $(document).ready(($)=>{
 		$xhttp2.onreadystatechange = () =>{
 
 			if($xhttp2.readyState == 4 && $xhttp2.status == 200){
-				const $data_from_server = JSON.parse($xhttp2.responseText);
 
-				$welcome_header.text( `Welcome ${$data_from_server.username}` )
+				const $data_from_server = JSON.parse($xhttp2.responseText);
+				
+				$welcome_header.text( `Welcome ${$data_from_server.username}` );
 
 			}
 		}
-		$xhttp2.open("get","includes/getAdminDetails.inc.php",true);
+		$xhttp2.open("get","admin_includes/getAdminDetails.inc.php",true);
 		$xhttp2.send();
 
 

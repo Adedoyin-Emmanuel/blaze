@@ -5,7 +5,7 @@
 
 
 
-require_once "../../controllers/emailController.controller.php";
+require_once "../controllers/emailController.controller.php";
 
 $get_all_waitlist = new EmailController("adedoyine535@gmail.com");
 

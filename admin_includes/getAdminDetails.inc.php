@@ -3,14 +3,16 @@
 
 
 
-require_once "../../includes/session.inc.php";
+require_once "../includes/session.inc.php";
+require_once "../admin_controllers/loginController.controller.php";
+
+
 
 /*
 		
-		component structor for getAdminDetails.inc.php
+		component constructor for getAdminDetails.inc.php
 
 */
-require_once "../controllers/loginController.controller.php";
 
 
 
@@ -33,6 +35,9 @@ if($get_details_result == 1){
 
 		echo $admin_details_data;
 	}
+}else{
+
+	echo $get_details_result;
 }
 
 

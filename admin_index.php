@@ -1,6 +1,6 @@
 <?php
 
-require_once "../includes/session.inc.php";
+require_once "includes/session.inc.php";
 
 $_COOKIE["login"] = $_SESSION["login"];
 
@@ -25,9 +25,9 @@ if(!isset($_SESSION["login"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <?php require_once "../includes/component.inc.php" ?>
+    <?php require_once "includes/component.inc.php" ?>
 
-    <?php require_once "../includes/style.inc.php" ?>
+    <?php require_once "includes/style.inc.php" ?>
     <title>Blaze Admin </title>
 
     <style>
@@ -35,15 +35,15 @@ if(!isset($_SESSION["login"])){
 
 
     </style>
-        <link rel="icon"  href="../logo.png">
+        <link rel="icon"  href="logo.png">
 
-    <script src="includes/getWaitlist.inc.js"></script>
-    <script src="includes/getAdminDetails.inc.js"></script>
-    <script src="includes/sendBulkEmail.inc.js"></script>
+    <script src="admin_includes/getWaitlist.inc.js"></script>
+    <script src="admin_includes/getAdminDetails.inc.js"></script>
+    <script src="admin_includes/sendBulkEmail.inc.js"></script>
 </head>
 <body class="container-fluid p-0">
 
-	<?php require_once "includes/adminNav.inc.php"?>
+	<?php require_once "admin_includes/adminNav.inc.php"?>
 	
 		<div  id="spinner" class="">
 
@@ -148,7 +148,7 @@ if(!isset($_SESSION["login"])){
 
 	</div> 
 
-	<?php require_once "../includes/footer.inc.php"?>
+	<?php require_once "includes/footer.inc.php"?>
 
 	<script>
 		

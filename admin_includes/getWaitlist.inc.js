@@ -16,7 +16,7 @@ $(document).ready(($)=>{
 		}
 
 
-		$xhttp.open("get","includes/getWaitlist.inc.php",true);
+		$xhttp.open("get","admin_includes/getWaitlist.inc.php",true);
 		$xhttp.send();
 
 	},1000)

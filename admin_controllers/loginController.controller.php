@@ -12,7 +12,7 @@
 	class LoginController extends ConnectionController{
 
 		public function __construct(){
-			parent::__construct();
+			parent::__construct("localhost","root","","blaze_waitlist");
 		}
 
 		public function custom_input_sanitizer($data){
@@ -66,7 +66,7 @@
 					return "couldn't get the admin info";
 				}
 			}else{
-					return "an error occured";
+					return "an error occured".$this->conn->error;
 			}
 		}
 	}

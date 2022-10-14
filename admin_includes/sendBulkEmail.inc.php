@@ -1,7 +1,7 @@
 <?php
 
 
-require_once "../controllers/bulkEmailSenderController.controller.php";
+require_once "controllers/bulkEmailSenderController.controller.php";
 
 
 

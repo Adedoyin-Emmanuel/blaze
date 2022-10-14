@@ -1,10 +1,10 @@
 <?php
 
- require_once "../includes/session.inc.php";
+ require_once "includes/session.inc.php";
 //check if the user is logged in
 
 if(isset($_SESSION["login"])){
-	echo '<script>location.href = "index.php"; </script>';
+	echo '<script>location.href = "admin_index.php"; </script>';
 }
 
 
@@ -20,9 +20,9 @@ if(isset($_SESSION["login"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <?php require_once "../includes/component.inc.php" ?>
+    <?php require_once "includes/component.inc.php" ?>
 
-    <?php require_once "../includes/style.inc.php" ?>
+    <?php require_once "includes/style.inc.php" ?>
     <title>Blaze Admin Login</title>
 
     <style>
@@ -30,13 +30,13 @@ if(isset($_SESSION["login"])){
 
 
     </style>
-        <link rel="icon"  href="../logo.png">
+        <link rel="icon"  href="logo.png">
 
-    <script src="includes/processLogin.inc.js"></script>
+    <script src="admin_includes/processLogin.inc.js"></script>
 </head>
 <body class="container-fluid p-0">
 
-	<?php require_once "includes/adminNav.inc.php"?>
+	<?php require_once "admin_includes/adminNav.inc.php"?>
 	
 		<div  id="spinner" class="">
 
@@ -89,6 +89,6 @@ if(isset($_SESSION["login"])){
 
 	</div> 
 
-	<?php require_once "../includes/footer.inc.php"?>
+	<?php require_once "includes/footer.inc.php"?>
 </body>
 </html>

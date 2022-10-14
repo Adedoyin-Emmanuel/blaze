@@ -1,6 +1,6 @@
 <?php
 
-	require_once "../../controllers/databaseController.controller.php";
+	require_once "../controllers/databaseController.controller.php";
 
 /*  
 

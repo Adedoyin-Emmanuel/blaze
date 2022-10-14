@@ -70,7 +70,7 @@ require_once "databaseController.controller.php";
 
 				#check for duplicate
 
-				$this->duplicate_sql = "SELECT * FROM blaze_waitlist WHERE email = '$this->email'";
+				$this->duplicate_sql = "SELECT * FROM waitlist WHERE email = '$this->email'";
 				$this->duplicate_result = $this->conn->query($this->duplicate_sql);
 
 
@@ -80,7 +80,7 @@ require_once "databaseController.controller.php";
 					return "chief, you are already in the waitlist";
 					die();
 				}else{
-					$this->insert_sql = "INSERT INTO blaze_waitlist (email,date_joined) VALUES ('$this->legit_email','$this->date_joined')";
+					$this->insert_sql = "INSERT INTO waitlist (email,date_joined) VALUES ('$this->legit_email','$this->date_joined')";
 
 					$this->insert_result = $this->conn->query($this->insert_sql);
 

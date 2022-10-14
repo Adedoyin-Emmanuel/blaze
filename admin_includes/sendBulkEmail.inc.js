@@ -18,7 +18,7 @@ $(document).ready(($)=>{
 
 		}
 
-		$xhttp3.open("post","includes/sendBulkEmail.inc.php",true);
+		$xhttp3.open("post","admin_includes/sendBulkEmail.inc.php",true);
 		$xhttp3.send($formData);
 	})
 
