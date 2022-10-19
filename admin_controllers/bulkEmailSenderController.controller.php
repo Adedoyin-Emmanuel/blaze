@@ -10,7 +10,7 @@
  * 
  * */
 require_once "connectionController.controller.php";
-require_once "../../includes/phpMailer.inc.php";
+require_once "../admin_includes/phpMailer.inc.php";
 	
 			
 
@@ -24,9 +24,9 @@ require_once "../../includes/phpMailer.inc.php";
 		 * */
 
 
-		 protected $senderEmail;
-		 protected $emailHeader;
-		 protected $emailBody;
+		 // protected $senderEmail;
+		 // protected $emailHeader;
+		 // protected $emailBody;
 
 
 		public function __construct($senderEmail,$emailHeader,$emailBody){
@@ -53,7 +53,7 @@ require_once "../../includes/phpMailer.inc.php";
 
 		public function get_all_waitlist(){
 
-			$this->get_all_waitlist_sql    = "SELECT * FROM blaze_waitlist";
+			$this->get_all_waitlist_sql    = "SELECT * FROM  waitlist";
 			$this->get_all_waitlist_result = $this->conn->query($this->get_all_waitlist_sql);
 
 			#check if query was successful

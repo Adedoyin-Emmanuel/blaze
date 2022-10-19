@@ -154,6 +154,22 @@
                 </div>
 
 
+                <!-- net user  setup -->
+              <!--   <div class="form-group my-4">
+                    <label for="browserType" class="text-capitalize py-2">Please enter your system</label>
+
+                    <select class="form-control text-light" id="sel1" style="background: #343a40 " name="server_type">
+                        <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
+
+                        <option class="option px-2 text-capitalize " value="1">Xampp Server</option>
+                        <option class="option px-2 text-capitalize " value="2">Wamp Server</option>
+                        <option class="option px-2 text-capitalize " value="3">Mamp Server</option>
+                        <option class="option px-2 text-capitalize " value="4">Node JS</option>
+
+                    </select>
+                </div> -->
+
+
 
                   <!--   <h6 class="text-capitalize text-center fs-6 my-2">coming soon</h6>
 

@@ -1,7 +1,7 @@
 <?php
 
 
-
+require_once "../controllers/blazeDevController.controller.php";
 
 
 		/*
@@ -239,9 +239,6 @@ if(!empty($client_browser)){
 	}
 
 
-
-
-
 if(!empty($client_server)){
 	array_push($client_choice,$client_server);
 }
@@ -249,17 +246,21 @@ if(!empty($client_server)){
 
 
 
+//main blaze logic
 
 
 
-	echo $client_operating_system;
-	echo "<br/>";
-	echo $client_code_editor;
-	echo "<br/>";
-	echo $client_browser;
-	echo "<br/>";
-	echo $client_server;
-	var_dump($client_choice);
+$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser);
+
+
+$file_generate_status = $BLAZE->generate_blaze_file();
+
+if($file_generate_status != 1){
+	echo $file_generate_status;
+}else{
+	echo "blaze file generated successfully";
+}
+
 
 
 
