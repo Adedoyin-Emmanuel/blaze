@@ -139,6 +139,27 @@
 
 
 							";
+								/*bracket code editor*/
+							case "bracket":
+								
+									//file directory to proceed
+								$this->code_editor_directory ="Program Files (x86)\Brackets";
+
+								$this->code_editor_exe_file_name = "Brackets.exe";
+
+								$this->blaze_file_generate_code_editor .= "
+
+									rem code editor => brackets 
+									rem enter the system root directory
+									cd /
+
+									cd ".$this->code_editor_directory."
+
+									rem start the code editor
+
+									start ".$this->code_editor_exe_file_name."
+								";
+
 								break;
 
 							/*notepad code editor*/
@@ -165,18 +186,16 @@
 
 							/*atom code editor*/
 							case "atom":
-							//file directory to proceed
+							//file directory to proceed good thing atom is installed globally
 							$this->code_editor_directory ="AppData\Local\atom";
 
-							$this->code_editor_exe_file_name = "atom.exe";
+							$this->code_editor_exe_file_name = "atom";
 
 
 							$this->blaze_file_generate_code_editor .= "
 								rem code editor => atom 
 								rem enter the system root directory
-								cd ..
-
-								cd ".$this->code_editor_directory."
+								
 
 								rem start the code editor
 
@@ -214,6 +233,21 @@
 								break;
 
 							case "firefox":
+									//the client browser is firefox
+									$this->client_browser_directory ="Program Files\Mozilla Firefox";
+									$this->client_browser_exe_file_name = "firefox.exe";
+
+									//generate the brower setup code
+									$this->blaze_file_generate_browser_type .= "
+
+									    rem client default browser => firefox
+										cd /
+
+										cd ".$this->client_browser_directory."
+
+										start ".$this->client_browser_exe_file_name."
+
+									";
 									
 								break;
 							case "edge":
@@ -240,6 +274,24 @@
 									
 								break;
 							case "internet explorer":
+									//the client browser is internet explorer
+									$this->client_browser_directory ="Program Files\Internet Explorer";
+									$this->client_browser_exe_file_name = "iexplore.exe";
+
+									//generate the brower setup code
+									$this->blaze_file_generate_browser_type .= "
+
+									    rem client default browser => internet explorer
+
+										cd /
+
+										cd ".$this->client_browser_directory."
+
+										start ".$this->client_browser_exe_file_name."
+
+									";
+
+
 									
 								break;
 							default:

@@ -66,29 +66,17 @@
 
 
     <div class="container-fluid m-auto py-5">
-        <button class="btn btn-secondary text-center rounded-3 my-2"><a href="homePage.php" class="text-decoration-none text-light "><strong>&lt; &lt;</strong></a></button>
-        <h4 class="fs-4 text-capitalize text-center my-5">get to know blaze <img src="logo.png" style="width:60px;"></h4>
-
-        <section class="text-capitalize p-4 my-3 m-auto section">
-            before using blaze, we want you to know the basics, <strong>blaze</strong> is a web app designed to bootstrap development, after a series of questions and answers, blaze would generate an executable file which you can download and run.
-
-            <h5 class="text-capitalize fs-5 py-4">how do i use blaze ?</h5>
-            if you are a developer, you should be familiar with always having to launch you code editor, browsers, servers like (wamp, xampp, node js) etc during development/coding, it could be tedious and that's what Blaze is solving. give it a try
-
-            <section>
-                <strong>Note:</strong>
-                blaze would configure the executable file for you based on what you select (your preference), please try not to select what you don't use or isn't available on your system. <strong class="text-capitalize">for example</strong>, if you aren't a backend developer, you wouldn't need to configure blaze to start your server when you want to code.
-            </section>
-            <br />
-            <button class="btn btn-primary my-4 text-capitalize text-center"><a class="text-decoration-none text-light" href="#blaze">use blaze</a><a href="#blaze"><img src="logo.png" style="width: 40px;"></a></button>
-        </section>
-
-
+      
+       <br/>
+         <section class="my-4 text-capitalize text-md-center">
+       
+            Note, before you configure blaze below, please ensure you have read the <a href="blazeDocs.php">docs</a>.
+         </section>
         <section class="use_blaze text-capitalize" id="blaze">
 
             <form class="p-5  rounded-3  m-auto form" method="post" action="" id="form" autocomplete="off" enctype="multipart/form-data">
                 
-                <h4 class="fs-4 text-center text-capitalize py-2 bg-transparent">Blaze Setup⚡</h4>
+                <h4 class="fs-4 text-center text-capitalize py-2 bg-transparent">Blaze Setup</h4>
                 <div class="text-light fw-2 text-center d-flex align-items-center justify-content-center m-auto rounded-3 p-2 d-none" id="error_alert" style="background: tomato; ">
                     <!-- *This is an error message* -->
                 </div>
