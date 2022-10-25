@@ -314,6 +314,10 @@
         $("#waitlist").addClass("text-light");
         $("#waitlist").removeClass("bg-light");
         $("#waitlist").addClass("bg-dark");
+        $("select,#input").removeClass("text-dark");
+        $("select,#input").addClass("text-light");
+
+        $("select,#input").css({"background":"#343a40 ","border":"none"});
 
        // $(".accordion-item").css({"background":"#121117", "color":"#fff"});
         // $(".input").css({"-webkit-box-shadow": "0 0 0 30px #343a40  inset !important"});
@@ -348,6 +352,12 @@
 
         $("#form").addClass("shadow-sm");
         $("#form").css({"border":"1px solid black"});
+
+        $("select,#input").removeClass("text-light");
+        $("select,#input").addClass("text-dark");
+
+        $("select,#input").css({"background":"aliceblue","border":"1px solid grey"});
+
         // $(".input").css({"-webkit-box-shadow": "0 0 0 30px azure inset !important"});
         $mainBody.css({"background":"azure", "color":"#000"});
 

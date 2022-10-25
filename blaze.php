@@ -76,7 +76,7 @@
 
             <form class="p-5  rounded-3  m-auto form" method="post" action="" id="form" autocomplete="off" enctype="multipart/form-data">
                 
-                <h4 class="fs-4 text-center text-capitalize py-2 bg-transparent">Blaze Setup</h4>
+                <h4 class="fs-4 text-center text-capitalize py-2 bg-transparent">Blaze Setup for developers</h4>
                 <div class="text-light fw-2 text-center d-flex align-items-center justify-content-center m-auto rounded-3 p-2 d-none" id="error_alert" style="background: tomato; ">
                     <!-- *This is an error message* -->
                 </div>
@@ -141,66 +141,54 @@
                     </select>
                 </div>
 
+                    <!-- browser tabs-->
+                <div class="form-group my-4">
+                    <label for="browserType" class="text-capitalize py-2">
+                        enter websites to open by default, seperate by commas
+                    </label>
+                        <input type="text" name="" class="form-control p-2" placeholder="eg stackoverflow.com, php.net, github.com" id="input">
+                </div>
 
-                <!-- net user  setup -->
-              <!--   <div class="form-group my-4">
-                    <label for="browserType" class="text-capitalize py-2">Please enter your system</label>
+                <!-- version controlling system  setup -->
+                <div class="form-group my-4">
+                    <label for="browserType" class="text-capitalize py-2">
+                        choose the version control system to open by default
+                    </label>
 
                     <select class="form-control text-light" id="sel1" style="background: #343a40 " name="server_type">
                         <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
 
-                        <option class="option px-2 text-capitalize " value="1">Xampp Server</option>
-                        <option class="option px-2 text-capitalize " value="2">Wamp Server</option>
-                        <option class="option px-2 text-capitalize " value="3">Mamp Server</option>
-                        <option class="option px-2 text-capitalize " value="4">Node JS</option>
-
-                    </select>
-                </div> -->
-
-
-
-                  <!--   <h6 class="text-capitalize text-center fs-6 my-2">coming soon</h6>
-
-                    <ul>
-                        <li>open default directory </li>
-                    </ul>
- -->
-                <!-- folder  setup -->
-       <!--          <div class="form-group my-4 ">
-                    <label for="browserType" class="text-capitalize py-2">Default project directory</label>
-                    
-                    <select class="form-control text-light" id="sel1" style="background: #343a40 " name="browser_type" disabled>
-                        <option class="option px-2 text-capitalize text-center m-auto" value="0">DISABLED</option>
-
-                        <option class="option px-2 text-capitalize " value="1">Xampp Server</option>
-                        <option class="option px-2 text-capitalize " value="2">Wamp Server</option>
-                        <option class="option px-2 text-capitalize " value="3">Mamp Server</option>
-                        <option class="option px-2 text-capitalize " value="4">Node JS</option>
-
-                    </select>
-
-
-                    <input type="text" name="folder_name " class="form-control px-2 text-light" placeholder="enter folder to start by default">
-
-
-                    <div class="m-auto py-3">
-                        <p>folders in desktop</p>
-                        <ul>
-                            <li>coding_test</li>
-                            <li>programming</li>
-                            <li></li>
-                        </ul>
-
-                    </div>
+                        <option class="option px-2 text-capitalize " value="1">Github </option>
+                        <option class="option px-2 text-capitalize " value="2">Bitbucket</option>
+                        <option class="option px-2 text-capitalize " value="3">Git Lab </option>
+                       
+                    </select> 
                 </div>
 
-             
-            
-                <div class="form-group my-4">
-                    <label for="browserType" class="text-capitalize py-2">file extension to open by default</label>
 
-                    <input type="text" class="form-control px-2 text-light" placeholder="eg .php, .html, .js" />
-                </div> -->
+                 <div class="form-group my-4">
+                    <label for="browserType" class="text-capitalize py-2">
+                        version control system
+                    </label>
+                    <br/>
+
+                    <input type="checkbox" name="" class="form-check-input"> start git bash default
+                </div>
+
+
+                 <div class="form-group my-4">
+                    <label for="browserType" class="text-capitalize py-2">
+                        command line setup
+                    </label>
+                    <br/>
+
+                    <input type="checkbox" name="" class="form-check-input"> start CMD (command Prompt) by default
+                </div>
+
+
+
+
+               
 
 
 

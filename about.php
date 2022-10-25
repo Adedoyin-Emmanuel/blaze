@@ -41,15 +41,31 @@
       <h5 class="fs-5 text-capitalize px-1">what is blaze trying to solve?</h5>
 
       <section class="m-auto py-2 py-md-3 px-3">
-        Blaze is going to solve the recursive problem of opening code editors, browsers, servers and other personal files manually before you can code.
-        with Blaze, all you need to do is to configure it to your taste, dowload the exe file, install into your computer desktop and run it anytime you want to code.
+        Blaze is going to solve the recursive problem of opening multiple desktop software programs. It is a provides a huge platform for developers and non developers. 
+
 
     </section>
+      <h5 class="fs-5 text-capitalize px-1">Blaze for developers</h5>
+
+         <section class="m-auto py-2 py-md-3 px-3">
+        Blaze is going to solve the recursive problem of opening code editors, browsers, servers and other personal files manually before you can code.
+        with Blaze, all you need to do is to configure it to your taste, dowload the exe file, configure / install into your computer desktop and run it anytime you want to code.
+
+        </section>
+
+        <h5 class="fs-5 text-capitalize px-1 text-danger">Blaze for Non Developers</h5>
+
+         <section class="m-auto py-2 py-md-3 px-3">
+        Blaze is going to solve the recursive problem of opening multiple software programs when using the computer, if you are graphics designer, typist, video editor etc (you just need to configure the multiple software programs you use and blaze would always open them for you when you launch the BLAZE file) <p class="text-warning d-inline">please note </p> 
+        you just need to do the configuration once and download the generated file, install the file to your computer desktop (home menu) and then run it anytime you want to work
+
+        </section>
+        
 
     <h5 class="fs-5 text-capitalize px-1">who is blaze meant for?</h5>
 
       <section class="m-auto py-2 py-md-3 px-3">
-        If you find yourself opening multiple applications / software programs everytime you want to work. Then blaze is meant for you.
+        If you find yourself opening multiple applications / software programs everytime you want to work on your computer. Then blaze is meant for you.
 
     </section>
 

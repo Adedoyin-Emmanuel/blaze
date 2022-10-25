@@ -4,16 +4,17 @@
 					rem start the code editor by default
 				
 
-									rem code editor => brackets 
-									rem enter the system root directory
-									cd /
+								rem code editor => sublime text
+								rem enter the system root directory
+								cd /
 
-									cd Program Files (x86)\Brackets
+								cd Program Files\Sublime Text
 
-									rem start the code editor
+								rem start the code editor
 
-									start Brackets.exe
-								 
+								start sublime_text.exe
+
+							 
 
 					rem start the user's browser choice next
 
@@ -26,4 +27,15 @@
 
 										start msedge.exe
 
+									 
+
+					rem start the user's server choice next
+				
+										rem client's default server => WAMP SERVER
+
+										cd/
+
+										cd wamp
+
+										start wampmanager.exe
 									

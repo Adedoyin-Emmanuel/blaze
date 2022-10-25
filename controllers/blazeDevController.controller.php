@@ -10,7 +10,8 @@
  * 
  * */
 
-
+	
+	namespace Blaze\BlazeGen;
 
 	final class BlazeGenerator{
 
@@ -30,9 +31,13 @@
 			protected $client_browser_directory;
 			protected $client_browser_exe_file_name;
 			protected $blaze_file_generate_browser_type; 
+			protected $blaze_file_generate_server_type;
+			protected $client_server_exe_file_name;
+
+			protected $client_server_directory;
 
 			
-		public function __construct($operating_system, $code_editor, $browser = "", $server_type = " "){
+		public function __construct($operating_system, $code_editor, $browser = "", $server_type = ""){
 			if(empty($operating_system) OR empty($code_editor)){
 				return "can't implement Blaze without an OS";
 			}
@@ -62,7 +67,14 @@
 					rem start the user's browser choice next
 
 				";
+				
 
+				$this->client_server_exe_file_name = "";
+				$this->client_server_directory     = "";
+				$this->blaze_file_generate_server_type = "
+
+					rem start the user's server choice next
+				";
 
 	
 			/*create the default code editor directory based on the OS*/
@@ -210,6 +222,74 @@
 								break;
 						}
 
+
+							//check the server type the client choose
+
+							switch ($this->server_type) {
+								case "xampp":
+									#client choose xampp server
+									$this->client_server_directory ="xampp";
+									$this->client_server_exe_file_name = "xampp-control.exe";
+									$this->blaze_file_generate_server_type .= "
+										rem client's default server => XAMPP SERVER
+
+										cd/
+
+										cd ".$this->client_server_directory."
+
+										start ".$this->client_server_exe_file_name."
+									";
+									break;
+								case "wamp":
+									#client choose wamp 
+									$this->client_server_directory ="wamp";
+									$this->client_server_exe_file_name = "wampmanager.exe";
+									$this->blaze_file_generate_server_type .= "
+										rem client's default server => WAMP SERVER
+
+										cd/
+
+										cd ".$this->client_server_directory."
+
+										start ".$this->client_server_exe_file_name."
+									";
+									break;
+								case "mamp":
+									#client choose mamp server
+
+										//not currently availiable
+									break;
+								case "node":
+									#client choose node js server
+							
+									$this->client_server_directory ="Program Files/nodejs";
+									$this->client_server_exe_file_name = "node.exe";
+									$this->blaze_file_generate_server_type .= "
+										rem client's default server => NODE SERVER
+
+										cd/
+
+										cd ".$this->client_server_directory."
+
+										start ".$this->client_server_exe_file_name."
+									";
+									break;
+								default:
+									
+									$this->client_server_directory ="nothing";
+									$this->client_server_exe_file_name = "nothing";
+									$this->blaze_file_generate_server_type .= "
+										rem client's default server =>  SERVER
+
+										cd/
+
+										cd ".$this->client_server_directory."
+
+										start ".$this->client_server_exe_file_name."
+									";
+									break;
+							}
+
 						//check the type of browser the client is using
 						switch ($this->browser) {
 
@@ -297,6 +377,9 @@
 							default:
 									
 								break;
+
+
+						
 						}
 
 					break;
@@ -338,7 +421,7 @@
 					$this->blaze_file = fopen($this->file_name,"w");
 
 					//concatenate all the respective blaze written code lines.
-					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type;
+					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type;
 					fwrite($this->blaze_file, $this->ALL_BLAZE_CODE);
 
 					if(file_exists($this->saved_file_folder)){
@@ -357,7 +440,9 @@
 					
 					$this->blaze_file = fopen($this->file_name,"w");
 
-					fwrite($this->blaze_file, $this->blaze_file_generate_code_editor);
+					//concatenate all the respective blaze written code lines.
+					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type;
+					fwrite($this->blaze_file, $this->ALL_BLAZE_CODE);
 
 					if(file_exists($this->saved_file_folder)){
 						return true;

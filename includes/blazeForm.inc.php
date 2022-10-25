@@ -249,8 +249,9 @@ if(!empty($client_server)){
 //main blaze logic
 
 
+use Blaze\BlazeGen\BlazeGenerator;
 
-$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser);
+$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser,$client_server);
 
 
 $file_generate_status = $BLAZE->generate_blaze_file();

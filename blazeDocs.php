@@ -69,6 +69,7 @@
     <h5 class="fs-5 text-capitalize px-1">Not a developer ?</h5>
 
       <section class="m-auto py-2 py-md-3 px-3">
+            We've got you covered... we have a special version of blaze for you
             Wait for blaze 2.0, we would support all the apps you want to start by default when you want to work.... Till then, read more about <a class="text-uppercase text-decoration-none" href="homePage.php">BLAZE</a>
     </section>
 
