@@ -36,10 +36,27 @@
 
 			protected $client_server_directory;
 
+			protected $client_version_control_system;
+			protected $client_default_terminal_start;
+			protected $client_default_git_start;
+			protected $client_multiple_browser_tabs_start;
+
+			protected $blaze_file_generate_version_control_system;
+			protected $blaze_file_generate_version_control_system_directory;
+			protected $blaze_file_generate_version_control_system_exe;
+			protected $corresponding_VCS_website;
+
+			protected $blaze_file_generate_default_terminal;
+			protected $blaze_file_generate_default_git_start;
+
+
+
 			
-		public function __construct($operating_system, $code_editor, $browser = "", $server_type = ""){
+		public function __construct($operating_system, $code_editor, $browser = "", $server_type = "",$client_version_control_system = "",$client_default_terminal_start ="",$client_default_git_start = "",$client_multiple_browser_tabs_start = ""){
+
+			#important BLAZE properties
 			if(empty($operating_system) OR empty($code_editor)){
-				return "can't implement Blaze without an OS";
+				return "can't implement Blaze without an OS or a Code Editor";
 			}
 
 
@@ -75,6 +92,38 @@
 
 					rem start the user's server choice next
 				";
+
+				$this->client_version_control_system = $client_version_control_system;
+				$this->client_default_terminal_start =$client_default_terminal_start;
+				$this->client_default_git_start = $client_default_git_start;
+				$this->client_multiple_browser_tabs_start = $client_multiple_browser_tabs_start;
+
+
+
+				$this->blaze_file_generate_version_control_system = "
+					rem start the user's version control choice next.
+
+				";
+				$this->blaze_file_generate_default_terminal = "
+					rem start the user's terminal next
+				";
+				$this->blaze_file_generate_default_git_start = "
+					rem start the user's version control sytem next
+				";
+
+				$this->blaze_file_generate_default_websites = "
+					rem start the default websites next
+				";
+
+
+				$this->client_version_control_system_directory = "";
+				$this->client_version_control_system_exe = "";
+
+				#VSC => Version Control System
+				$this->corresponding_VCS_website = "";
+
+
+
 
 	
 			/*create the default code editor directory based on the OS*/
@@ -223,6 +272,120 @@
 						}
 
 
+							#check for the client's choice of version control system
+
+							switch ($this->client_version_control_system) {
+								case "SELECT":
+									$this->corresponding_VCS_website = "";
+									break;
+
+								case "github":
+									$this->corresponding_VCS_website = "www.github.com";
+
+									#when blaze loads, start the websiteb by default
+									$this->blaze_file_generate_version_control_system .= "
+										start ".$this->corresponding_VCS_website."
+									";
+									break;
+
+								case "bitbucket":
+									$this->corresponding_VCS_website = "www.bitbucket.com";
+
+									#when blaze loads, start the websiteb by default
+									$this->blaze_file_generate_version_control_system .= "
+										start ".$this->corresponding_VCS_website."
+									";
+									break;
+
+								case "gitlab":
+									$this->corresponding_VCS_website = "www.gitlab.com";
+
+									#when blaze loads, start the websiteb by default
+									$this->blaze_file_generate_version_control_system .= "
+										start ".$this->corresponding_VCS_website."
+									";
+									break;
+								
+								default:
+									$this->corresponding_VCS_website = "";
+									break;
+							}
+
+
+							#check the client's choice to start the terminal by default or not
+
+							switch ($this->client_default_terminal_start) {
+								case 1:
+									#start the client's terminal by default
+									$this->blaze_file_generate_default_terminal .= "
+										start cmd
+									";
+									break;
+								case 0:
+									#don't the client's terminal by default
+									$this->blaze_file_generate_default_terminal .= "";
+									break;
+								default:
+									#don't the client's terminal by default
+									$this->blaze_file_generate_default_terminal .= "";
+									break;
+							}
+
+
+
+							#check the client's choice to start the git BASH by default or not
+
+							switch ($this->client_default_git_start) {
+								case 1:
+									#start the client's version control system by default
+									$this->client_version_control_system_directory = "Program Files\Git";
+									$this->client_version_control_system_exe = "git-bash.exe";
+
+									$this->blaze_file_generate_default_git_start .= "
+										cd /
+										cd ".$this->client_version_control_system_directory."
+
+										start ".$this->client_version_control_system_exe."
+									";
+									break;
+								case 0:
+									#don't the client's version control system by default
+									$this->blaze_file_generate_default_git_start .= "";
+									break;
+								default:
+									#don't the client's version control system by default
+									$this->blaze_file_generate_default_git_start .= "";
+									break;
+
+							}
+
+
+
+
+							#check for the multiple websites the client wants to start by default when they start blaze
+
+							#loop through the whole websites append to the blaze file
+							if(!empty($this->client_multiple_browser_tabs_start) AND is_array($this->client_multiple_browser_tabs_start)){
+								for ($i = 0; $i < count($this->client_multiple_browser_tabs_start); $i++)
+									{
+								$this->blaze_file_generate_default_websites .= "
+
+									start ".$this->client_multiple_browser_tabs_start[$i]."
+
+								";
+
+
+								}
+							}else{
+								$this->client_multiple_browser_tabs_start = " ";
+							}
+							
+
+							
+
+
+
+
 							//check the server type the client choose
 
 							switch ($this->server_type) {
@@ -274,18 +437,25 @@
 										start ".$this->client_server_exe_file_name."
 									";
 									break;
+
+							case "SELECT":
+									#client choose select
+									$this->client_server_directory ="nothing";
+									$this->client_server_exe_file_name = "nothing";
+									$this->blaze_file_generate_server_type .= "
+										
+									";
+									break;
+
+									
+
+
 								default:
 									
 									$this->client_server_directory ="nothing";
 									$this->client_server_exe_file_name = "nothing";
 									$this->blaze_file_generate_server_type .= "
-										rem client's default server =>  SERVER
-
-										cd/
-
-										cd ".$this->client_server_directory."
-
-										start ".$this->client_server_exe_file_name."
+										
 									";
 									break;
 							}
@@ -374,8 +544,26 @@
 
 									
 								break;
-							default:
+							case "SELECT":
 									
+									//generate the brower setup code
+									$this->blaze_file_generate_browser_type .= "
+
+									   
+
+									";
+
+
+									
+								break;
+							default:
+									//generate the brower setup code
+									$this->blaze_file_generate_browser_type .= "
+
+									   
+
+									";
+
 								break;
 
 
@@ -421,7 +609,7 @@
 					$this->blaze_file = fopen($this->file_name,"w");
 
 					//concatenate all the respective blaze written code lines.
-					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type;
+					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type . " " .$this->blaze_file_generate_version_control_system . " ".$this->blaze_file_generate_default_terminal . " ".$this->blaze_file_generate_default_git_start . " ".$this->blaze_file_generate_default_websites;
 					fwrite($this->blaze_file, $this->ALL_BLAZE_CODE);
 
 					if(file_exists($this->saved_file_folder)){

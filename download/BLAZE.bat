@@ -20,22 +20,48 @@
 
 				
 
-									    rem client default browser => microsoft edge
+									    rem client default browser => chrome
 										cd /
 
-										cd Program Files (x86)\Microsoft\Edge\Application
+										cd Program Files\Google\Chrome\Application
 
-										start msedge.exe
+										start chrome.exe
 
 									 
 
 					rem start the user's server choice next
 				
-										rem client's default server => WAMP SERVER
+										rem client's default server => NODE SERVER
 
 										cd/
 
-										cd wamp
+										cd Program Files/nodejs
 
-										start wampmanager.exe
-									
+										start node.exe
+									 
+					rem start the user's version control choice next.
+
+				
+										start www.bitbucket.com
+									 
+					rem start the user's terminal next
+				
+										start cmd
+									 
+					rem start the user's version control sytem next
+				
+										cd /
+										cd Program Files\Git
+
+										start git-bash.exe
+									 
+					rem start the default websites next
+				
+
+									start www.stackoverflow.com
+
+								
+
+									start  www.php.net
+
+								

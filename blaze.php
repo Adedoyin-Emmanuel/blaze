@@ -146,7 +146,7 @@
                     <label for="browserType" class="text-capitalize py-2">
                         enter websites to open by default, seperate by commas
                     </label>
-                        <input type="text" name="" class="form-control p-2" placeholder="eg stackoverflow.com, php.net, github.com" id="input">
+                        <input type="text" name="default_sites" class="form-control p-2" placeholder="eg stackoverflow.com, php.net, github.com" id="input">
                 </div>
 
                 <!-- version controlling system  setup -->
@@ -155,7 +155,7 @@
                         choose the version control system to open by default
                     </label>
 
-                    <select class="form-control text-light" id="sel1" style="background: #343a40 " name="server_type">
+                    <select class="form-control text-light" id="sel1" style="background: #343a40 " name="version_control_system">
                         <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
 
                         <option class="option px-2 text-capitalize " value="1">Github </option>
@@ -172,7 +172,7 @@
                     </label>
                     <br/>
 
-                    <input type="checkbox" name="" class="form-check-input"> start git bash default
+                    <input type="checkbox" name="git_start" class="form-check-input"> start git bash default
                 </div>
 
 
@@ -182,7 +182,7 @@
                     </label>
                     <br/>
 
-                    <input type="checkbox" name="" class="form-check-input"> start CMD (command Prompt) by default
+                    <input type="checkbox" name="terminal_start" class="form-check-input"> start CMD (command Prompt) / Terminal by default
                 </div>
 
 

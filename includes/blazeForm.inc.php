@@ -3,13 +3,7 @@
 
 require_once "../controllers/blazeDevController.controller.php";
 
-
-		/*
-
-			get the necessary inputs from the form
-
-		*/
-
+	#get the necessary inputs from the user form
 
 	$operating_system = $_POST["operating_system"];
 	$code_editor	  = $_POST["code_editor"];
@@ -17,11 +11,21 @@ require_once "../controllers/blazeDevController.controller.php";
 
 	$default_server   = $_POST["server_type"];
 
+	$start_terminal_by_default= @$_POST["terminal_start"] OR "";
+	$start_git_by_default = @$_POST["git_start"] OR "";
+	$version_control_system = $_POST["version_control_system"];
+
+	$default_webistes_launch = $_POST["default_sites"] OR "";
+
+
+
+
+
 
 	$client_choice = array();
 
 
-	if(empty($operating_system) OR empty($code_editor) OR empty($default_browser)){
+	if(empty($operating_system) OR empty($code_editor)){
 		die("please fill the required fields");
 	}
 
@@ -126,9 +130,9 @@ require_once "../controllers/blazeDevController.controller.php";
 
 
 
-if(!empty($client_code_editor)){
-	array_push($client_choice,$client_code_editor);
-}
+	if(!empty($client_code_editor)){
+		array_push($client_choice,$client_code_editor);
+	}
 
 
 
@@ -149,7 +153,7 @@ if(!empty($client_code_editor)){
 	#prepare the switch statement for the operating system
 	switch ($default_browser) {
 		case "0":
-			die("please select your code-editor");
+			$client_browser = "SELECT";
 			break;
 
 		case "1":
@@ -179,7 +183,7 @@ if(!empty($client_code_editor)){
 			break;
 
 		default:
-			die("please select your code-editor");
+			$client_browser = "SELECT";
 			break;
 	}
 
@@ -213,7 +217,7 @@ if(!empty($client_browser)){
 	#prepare the switch statement for the operating system
 	switch ($default_server) {
 		case "0":
-			die("please select your server");
+			$client_server = "SELECT";
 			break;
 
 		case "1":
@@ -234,14 +238,93 @@ if(!empty($client_browser)){
 			break;
 
 		default:
-			die("please select your server");
+			$client_server = "SELECT";
 			break;
 	}
 
 
-if(!empty($client_server)){
-	array_push($client_choice,$client_server);
-}
+	if(!empty($client_server)){
+		array_push($client_choice,$client_server);
+	}
+
+	/*
+		check for some additional inputs
+	*/
+
+	#check for the type of version control system the client wants 
+	$client_version_control_system = "";
+	switch ($version_control_system) {
+		case "0":
+			$client_version_control_system = "SELECT";
+			break;
+
+		case "1":
+			$client_version_control_system = "github";
+			break;
+
+		case "2":
+			$client_version_control_system = "bitbucket";
+			break;
+
+		case "3":
+			$client_version_control_system = "gitlab";
+			break;
+
+		
+		default:
+			$client_version_control_system = "SELECT";
+			break;
+
+		}
+
+
+		if(!empty($client_version_control_system)){
+			array_push($client_choice,$client_version_control_system);
+		}
+
+
+
+		#check for the webistes the client want to start by default when they launch blaze
+		$default_sites_to_open = " ";
+		if(!empty($default_webistes_launch)){
+			$default_sites_to_open = explode(",", $default_webistes_launch);
+			$url_errors = array();
+			#loop through all the sites name and check if they have valid url
+				for($i=0; $i < count($default_sites_to_open); $i++){
+
+				    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$default_sites_to_open[$i])) {
+				      	
+					      	die($default_sites_to_open[$i]. " is not a valid website URL");
+
+				    }
+			}
+		}
+		
+
+
+		#check for the client's response for the command line default setup
+		$start_terminal_by_default_value = 0;
+
+		if(!empty($start_terminal_by_default)){
+			if($start_terminal_by_default == "on"){
+				$start_terminal_by_default_value = 1;
+			}else{
+				$start_terminal_by_default_value = 0;
+			}
+		}
+
+
+
+		#check for the client's response for the GIT BASH
+		$start_git_by_default_value = 0;
+
+		if(!empty($start_git_by_default )){
+			if($start_git_by_default  == "on"){
+				$start_git_by_default_value = 1;
+			}else{
+				$start_git_by_default_value = 0;
+			}
+		}
 
 
 
@@ -250,8 +333,8 @@ if(!empty($client_server)){
 
 
 use Blaze\BlazeGen\BlazeGenerator;
-
-$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser,$client_server);
+ 
+$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser,$client_server,$client_version_control_system,$start_terminal_by_default_value,$start_git_by_default_value,$default_sites_to_open);
 
 
 $file_generate_status = $BLAZE->generate_blaze_file();
