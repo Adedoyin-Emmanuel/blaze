@@ -341,7 +341,11 @@ $file_generate_status = $BLAZE->generate_blaze_file();
 if($file_generate_status != 1){
 	echo $file_generate_status;
 }else{
+
+
 	echo "blaze file generated successfully";
+
+	
 }
 
 
