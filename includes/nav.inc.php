@@ -68,15 +68,7 @@
       list-style-type: none;
     }
 
-    ul > li.nav-item:hover {
-        background: lightblue;
-        outline: none;
-        border-radius: 23px;
-        border: none;
-        cursor: pointer;
-
-
-    }
+ 
 
     ul > li > a.nav-link: hover{
       border: none;
@@ -99,7 +91,7 @@
 <nav class="hor-nav w-100  " style="position:fixed; width:100%; z-index:1000;">
 
 
-<ul class="nav d-flex align-items-start justify-content-start px-3" style=" background: lightblue;">
+<ul class="nav d-flex align-items-start justify-content-start px-3" style=" background: lightskyblue;">
 <span class="                                                                           text-light text-center p-1 my-1  rounded-3 d-md-none" style="cursor:pointer; width:40px; height:40px; font-size:20px; background: gray;" onclick="openNav()">&#9776</span>
 <div id="mySidenav" class="sidenav bg-primary">
   

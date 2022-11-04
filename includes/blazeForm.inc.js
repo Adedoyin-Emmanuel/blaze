@@ -15,7 +15,7 @@ $(document).ready(($)=>{
 			if($xhttp.readyState == 4 && $xhttp.status == 200){
 				if($xhttp.responseText.includes("generated successfully")){
 					swal.fire({
-						title:"Generated successfully ✨",
+						title:"Generated successfully ",
 						text:"Congrats 👊 Blaze file generated successfully",
 						showCancelButton:false,
                         icon:"success",
@@ -40,7 +40,11 @@ $(document).ready(($)=>{
 						confirmButtonText:"Regenerate",
 						
 
-					});
+					}).then((willProceed)=>{
+						//scroll to the top
+						
+
+					})
 				}
 			}
 		}

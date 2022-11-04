@@ -21,7 +21,6 @@ require_once "../controllers/blazeDevController.controller.php";
 
 
 
-
 	$client_choice = array();
 
 

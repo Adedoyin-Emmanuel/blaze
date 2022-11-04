@@ -1,35 +1,36 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWHreyHcjLQlHcDaNMmWzA4k47fvw++WXnm8xddgaNo3aztQ=
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFClbQgqLOVeeA6YX/Ofr08+qj3RaZ6IPSqD86JWjDck9zXnAeoEj2nVbnNgwHwtZfRe4ZgYk52dBuQQ=
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSTk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpCI=
-::egkzugNsPRvcWATEpCI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJhZks0
-::ZQ05rAF9IBncCkqN+0xwdVsFAlTi
-::ZQ05rAF9IAHYFVzEqQISJBpOSWQ=
-::eg0/rx1wNQPfEVWB+kM9LVsJDCaOPXG/Zg==
-::fBEirQZwNQPfEVWB+kM9LVsJDCaOPXG/Zg==
-::cRolqwZ3JBvQF1fEqQIRaAhbShCVPXm/RrMT+qj54OWTsVkPVfI2doib3rGYJewc+kjhe4JN
-::dhA7uBVwLU+EWHyJ+VsjJx1ADDCHP2P6TpAx3KGb
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATE1Gc9JQJHQwKWfF+/Bb0S5+T06OOCsS0=
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRmn/EczI1t0aQmPJXi1AKEj3OWb
-::Zh4grVQjdCyDJGyX8VAjFClbQgqLOVeeA6YX/Ofr08+qj3RaZ6IPSqD86JWjDck9zXnAeoEj2nVbnNgwLjd5RDflaxcxyQ==
-::YB416Ek+ZW8=
-::
-::
-::978f952a14a936cc963da21a135fa983
-call BLAZE.bat
+
+					color 0a
+					echo BLAZE 
+					rem start the code editor by default
+				
+
+								rem code editor => visual studio
+
+
+
+								rem start the code editor
+
+								start code
+							 
+
+					rem start the user's browser choice next
+
+				
+
+									   
+
+									 
+
+					rem start the user's server choice next
+				
+										
+									 
+					rem start the user's version control choice next.
+
+				 
+					rem start the user's terminal next
+				 
+					rem start the user's version control sytem next
+				 
+					rem start the default websites next
+				
