@@ -92,9 +92,7 @@
 
          <br/>
 
-         <button class="btn btn-primary text-capitalize my-3">
-          <a href="blaze.php" class="text-decoration-none text-light">Use Blaze !</a>
-         </button>
+       
 
     </section>
 

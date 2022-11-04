@@ -19,29 +19,28 @@
 
 <body id="body" >
   <script >
-    
-      setTimeout(()=>{
-            swal.fire({
-            title:"Blaze For Non Devs",
-            text:"Not a developer, read the docs for non developers",
-            icon:"info",
-            allowOutsideClick:false,
-            allowEscapeKey:false,
-            showCancelButton:true,
-            cancelButtonText:"Cancel",
-            cancelButtonColor:"tomato",
-            confirmButtonText:"Read Non Dev Docs!",
+    setTimeout(()=>{
+
+        swal.fire({
+          title:"Blaze For Devs",
+          text:"Are you a developer?",
+          icon:"info",
+          allowOutsideClick:false,
+          allowEscapeKey:false,
+          showCancelButton:true,
+          cancelButtonText:"Cancel",
+          cancelButtonColor:"tomato",
+          confirmButtonText:"Read Non Dev Docs!",
 
 
 
 
-          }).then((willProceed)=>{
-            if(willProceed.isConfirmed){
-              location.href = "blazeDocsNonDevs.php";
-            }
-          });
-      },3000);
-
+        }).then((willProceed)=>{
+          if(willProceed.isConfirmed){
+            location.href = "blazeDocs.php";
+          }
+        });
+    },3000);
   </script>
 
     <?php require_once "includes/nav.inc.php";?>
