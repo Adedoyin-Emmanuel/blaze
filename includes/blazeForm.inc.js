@@ -25,9 +25,7 @@ $(document).ready(($)=>{
 						allowEscapeKey:false
 					}).then((willProceed)=>{
 						if(willProceed.isConfirmed){
-							location.href="downloadBlaze.php";
-						}else{
-							return
+							location.href="blazeFileDownload.php";
 						}
 					})
 				}else{

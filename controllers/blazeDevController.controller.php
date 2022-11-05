@@ -289,7 +289,7 @@
 									break;
 
 								case "bitbucket":
-									$this->corresponding_VCS_website = "www.bitbucket.com";
+									$this->corresponding_VCS_website = "www.bitbucket.org";
 
 									#when blaze loads, start the websiteb by default
 									$this->blaze_file_generate_version_control_system .= "
