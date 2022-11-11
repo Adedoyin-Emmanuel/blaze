@@ -44,7 +44,7 @@
 
             }
 
-            ul>li>a: hover {
+            ul>li.nav-item>a: hover {
                 border: none;
                 outline: none;
             }
@@ -101,7 +101,7 @@
                         <input type="text" name="default_sites" class="form-control p-3" placeholder="eg www.facebook.com, www.tictok.com, www.netflix.com" id="input">
                 </div>
 
-
+                    <p class="text-start text-danger" style="font-size: 0.9rem;">tip you can open app location and copy the application path <a href="#">learn more</a></p>
                 <div class="form-group my-4">
                     <label for="browserType" class="text-capitalize py-2">
                        1. Application Directory Eg
@@ -186,12 +186,12 @@
 
 
         </section>
+    <?php require_once "includes/footer.inc.php" ?>
 
     </div>
 
 
 
-    <?php require_once "includes/footer.inc.php" ?>
 </body>
 
 </html>

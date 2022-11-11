@@ -62,7 +62,7 @@
                              <input type="email" class="form-control form m-auto w-75 p-3 px-4 text-dark small" id="exampleFormControlInput1" placeholder="name@example.com" name="email" id="waitlist"required>
                                    
 
-                                 <button class="btn btn-primary text-capitalize my-3 form m-auto">join waitlist</button>
+                                 <button class="btn bg-cs border-0 btn-dark text-capitalize my-3 form m-auto">join waitlist</button>
 
 
 

@@ -37,11 +37,11 @@
                 <img src="logo.png" height="400" width="400" class="img-fluid rounded" id="logo_legit">
         </div>
             
-        <div class="text-container col  p-3 text-center">
+        <div class="text-container col  p-3 ">
 
- <h3 class="text-capitalize py-4 m-auto text-center m-auto" id="heading_typing">blaze <img class="img-fluid text-center" src="logo.png" height="40" width="50"></h3>
+ <h3 class="text-capitalize py-md-4 py-1 m-auto text-center m-auto" id="heading_typing">blaze <img class="img-fluid text-center" src="logo.png" height="40" width="50"></h3>
                 
-                            <article class="text-capitalize m-auto py-3 quick-desc" id="article">
+                            <article class="text-capitalize py-2 quick-desc" id="article">
                                 blaze is a free web application built to <code class=" fs-6 rounded-1 p-1 text-primary text-danger">BOOTSTRAP</code> development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥
                             </article>
                
@@ -50,17 +50,17 @@
                                 
 
 
-                                        <h5 class="fs-5 text-capitalize text-md-left m-auto text-center my-3" id="nd_type">
+                                        <h5 class="fs-5 text-capitalize text-md-left m-auto my-3" id="nd_type">
                                            let's Get you started!
                                         </h5>
 
 
-                                        <article class="text-capitalize m-auto py-2 quick_desc " id="article">
+                                        <article class="text-capitalize py-2 quick_desc " id="article">
                                             to get started, join the waitlist to be among the first people to try blaze
                                         </article>
 
                                       
-                                        <button class="btn btn-primary m-auto text-center text-capitalize my-2 get_started "><span class="fs-6 get_started">Join waitlist</span> <img class="img-fluid get_started" src="logo.png" style="width:40px" id="get_started"></button>
+                                        <button class="btn bg-cs border-0 btn-primary m-auto text-center text-capitalize my-2 get_started "><span class="fs-6 get_started">Join waitlist</span> <img class="img-fluid get_started" src="logo.png" style="width:40px" id="get_started"></button>
 
                                         
                                        <!--  <button class="btn btn-primary m-auto text-center text-capitalize my-2 get_started "><span class="fs-6 get_started">try blaze!</span> <img class="img-fluid get_started" src="logo.png" height="40" width="50" id="get_started"></button>

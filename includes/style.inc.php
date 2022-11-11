@@ -97,7 +97,7 @@
 
         }
 
-        ul > li > a: hover{
+        ul > li.nav-item > a: hover{
           border: none;
           outline: none;
         }

@@ -2,8 +2,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		 <meta name="author" content="Adedoyin Emmanuel Adeniyi">
-		 <meta name="keyword" content="A web app that helps to bootstrap development, kickstart your projects today by using blaze"/>
-		 <meta name="keyword" content="blaze, full stack application, php, php project, php programming, bootstrap project"/>
+		 <meta name="keyword" content="A web app that helps to bootstrap development, kickstart your projects today by using blaze, software that opens multiple software, software development, next big thing, bootstraping desktop applications"/>
+		 <meta name="keyword" content="blaze, full stack application, php, php project, php programming, bootstrap project, bootstraping development blaze web app, BlazeWebApp, BlazeWeb, Blaze, multiple software opener"/>
 		<script src="components/sweetAlert2.js"></script>
 		<script src="components/jquery.js"></script>
 		<script src="components/bootstrap.js"></script>
