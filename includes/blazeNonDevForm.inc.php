@@ -120,21 +120,27 @@ $all_program_exe_files = array($default_application_exe_filename_1,$default_appl
     
    
 
-        #check for the webistes the client want to start by default when they launch blaze
-        $default_sites_to_open = " ";
-        if(!empty($default_webistes_launch)){
-            $default_sites_to_open = explode(",", $default_webistes_launch);
-            $url_errors = array();
-            #loop through all the sites name and check if they have valid url
-                for($i=0; $i < count($default_sites_to_open); $i++){
+    #check for the webistes the client want to start by default when they launch blaze
+    $default_sites_to_open = " ";
+    if(!empty($default_websites_launch)){
+        $default_sites_to_open = explode(",", $default_websites_launch);
+        $url_errors = array();
+        #loop through all the sites name and check if they have valid url
+            for($i=0; $i < count($default_sites_to_open); $i++){
 
-                    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$default_sites_to_open[$i])) {
-                        
-                            die($default_sites_to_open[$i]. " is not a valid website URL");
+                if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$default_sites_to_open[$i])) {
+                    
+                        die($default_sites_to_open[$i]. " is not a valid website URL");
 
-                    }
-            }
+                }
         }
+    }
+
+
+
+
+    #initialize the non blaze controller
+    
 
 
 
