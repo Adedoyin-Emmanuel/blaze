@@ -45,7 +45,9 @@
 										start www.github.com
 									 
 					rem start the user's terminal next
-				 
+				
+										start cmd
+									 
 					rem start the user's version control sytem next
 				
 										cd /
@@ -61,13 +63,5 @@
 								
 
 									start  www.github.com/Adedoyin-Emmanuel
-
-								
-
-									start  www.web.whatsapp.com
-
-								
-
-									start  www.web.facebook.com
 
 								

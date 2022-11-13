@@ -57,13 +57,13 @@
 					#loop through the all the input directory
 					for($i = 0; $i < count($this->all_app_directory); $i++){
 						
-							$this->blaze_file_app_directory += "
+							$this->blaze_file_app_directory .= "
 
 								rem change the directory
 									cd /
 								    cd ".$this->all_app_directory[$i]."
 								    rem start the exe file
-								    start ".$this->all_exe_name[$i]."
+								    call ".$this->all_exe_name[$i]."
 							";
 
 						
@@ -111,19 +111,23 @@
 		 #generate blaze file
 
 		public function generate_blaze_file(){
-			$this->saved_file_folder = "../nonDevsDownload/BLAZE.bat";
-
+			$this->saved_file_folder = "../nonDevsDownload/BLAZE_NON_DEV.bat";
+		    $this->blaze_file_end_of_file = "
+						rem exit the program
+						exit
+					";
 			//check if the file already exist and delete if it exists
 			if(file_exists($this->saved_file_folder)){
 				if(unlink($this->saved_file_folder)){
 
 					//create the blaze file
-					$this->file_name = "../download/BLAZE.bat";
+					$this->file_name = "../nonDevsDownload/BLAZE_NON_DEV.bat";
 					
 					$this->blaze_file = fopen($this->file_name,"w");
+				
 
 					//concatenate all the respective blaze written code lines.
-					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type . " " .$this->blaze_file_generate_version_control_system . " ".$this->blaze_file_generate_default_terminal . " ".$this->blaze_file_generate_default_git_start . " ".$this->blaze_file_generate_default_websites;
+					$this->ALL_BLAZE_CODE =$this->blaze_file_generate_multiple_browser_tabs ." ". $this->blaze_file_app_directory ." ".$this->blaze_file_end_of_file;
 					fwrite($this->blaze_file, $this->ALL_BLAZE_CODE);
 
 					if(file_exists($this->saved_file_folder)){
@@ -138,12 +142,12 @@
 				}
 			}else{
 					//the file doesn't exist, create the blaze file
-					$this->file_name = "../download/BLAZE.bat";
+					$this->file_name = "../nonDevsDownload/BLAZE_NON_DEV.bat";
 					
 					$this->blaze_file = fopen($this->file_name,"w");
 
 					//concatenate all the respective blaze written code lines.
-					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type;
+					$this->ALL_BLAZE_CODE =$this->blaze_file_generate_multiple_browser_tabs ." ". $this->blaze_file_app_directory ." ".$this->blaze_file_end_of_file;
 					fwrite($this->blaze_file, $this->ALL_BLAZE_CODE);
 
 					if(file_exists($this->saved_file_folder)){

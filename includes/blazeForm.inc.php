@@ -331,22 +331,22 @@ if(!empty($client_browser)){
 //main blaze logic
 
 
-use Blaze\BlazeGen\BlazeGenerator;
- 
-$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser,$client_server,$client_version_control_system,$start_terminal_by_default_value,$start_git_by_default_value,$default_sites_to_open);
+	use Blaze\BlazeGen\BlazeGenerator;
+	 
+	$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser,$client_server,$client_version_control_system,$start_terminal_by_default_value,$start_git_by_default_value,$default_sites_to_open);
 
 
-$file_generate_status = $BLAZE->generate_blaze_file();
+	$file_generate_status = $BLAZE->generate_blaze_file();
 
-if($file_generate_status != 1){
-	echo $file_generate_status;
-}else{
+	if($file_generate_status != 1)
+	{
+		echo $file_generate_status;
+	}else
+	{
 
+		echo "blaze file generated successfully";
 
-	echo "blaze file generated successfully";
-
-	
-}
+	}
 
 
 

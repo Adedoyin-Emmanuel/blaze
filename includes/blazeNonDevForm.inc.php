@@ -1,5 +1,6 @@
 <?php
 
+require_once "../controllers/blazeNonDevController.controller.php";
 
 /*
 
@@ -141,6 +142,24 @@ $all_program_exe_files = array($default_application_exe_filename_1,$default_appl
 
     #initialize the non blaze controller
     
+    use Blaze\NonBlazeGen\BlazeNonDevGenerator;
+
+    $BLAZE_NON_DEV = new BlazeNonDevGenerator($default_operating_system,$default_sites_to_open,
+            $all_project_folder,$all_program_exe_files);
+
+    $blaze_file_generate_status = $BLAZE_NON_DEV->generate_blaze_file();
+
+    if($blaze_file_generate_status != 1)
+    {
+        echo $blaze_file_generate_status;
+    }
+    else
+    {
+        echo "blaze file generated successfully";
+    }
+
+
+
 
 
 
