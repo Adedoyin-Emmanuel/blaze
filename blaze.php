@@ -106,6 +106,7 @@
                         <option class="option px-2 text-capitalize " value="5">Notepad</option>
                         <option class="option px-2 text-capitalize " value="6">Atom</option>
                         <option class="option px-2 text-capitalize " value="7">Text Edit</option>
+                        <option class="option px-2 text-capitalize " value="8">Vim</option>
                     </select>
                 </div>
 

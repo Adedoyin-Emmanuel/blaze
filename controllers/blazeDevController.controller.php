@@ -200,6 +200,30 @@
 
 
 							";
+
+
+							case "vim":
+							//file directory to proceed
+							$this->code_editor_directory ="Program Files (x86)\Vim\vim90";
+
+							$this->code_editor_exe_file_name = "vim.exe";
+
+							$this->blaze_file_generate_code_editor .= "
+
+								rem code editor => notepad ++
+								rem enter the system root directory
+								cd /
+
+								cd ".$this->code_editor_directory."
+
+								rem start the code editor
+
+								start ".$this->code_editor_exe_file_name."
+
+
+
+
+							";
 								/*bracket code editor*/
 							case "bracket":
 								

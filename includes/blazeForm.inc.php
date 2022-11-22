@@ -117,7 +117,10 @@ require_once "../controllers/blazeDevController.controller.php";
 		case "7":
 			$client_code_editor = "text edit";
 			break;
-
+		case "8":
+			$client_code_editor ="vim";
+			break;
+			
 		default:
 			die("please select your code-editor");
 			break;
