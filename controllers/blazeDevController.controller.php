@@ -201,7 +201,7 @@
 
 							";
 
-
+							//vim code editor
 							case "vim":
 							//file directory to proceed
 							$this->code_editor_directory ="Program Files (x86)\Vim\vim90";
@@ -210,7 +210,31 @@
 
 							$this->blaze_file_generate_code_editor .= "
 
-								rem code editor => notepad ++
+								rem code editor => vim
+								rem enter the system root directory
+								cd /
+
+								cd ".$this->code_editor_directory."
+
+								rem start the code editor
+
+								start ".$this->code_editor_exe_file_name."
+
+
+
+
+							";
+
+							//emacs code editor
+							case "emacs":
+							//file directory to proceed
+							$this->code_editor_directory ="Program Files\Emacs\emacs-28.2\bin";
+
+							$this->code_editor_exe_file_name = "runemacs.exe";
+
+							$this->blaze_file_generate_code_editor .= "
+
+								rem code editor => emacs
 								rem enter the system root directory
 								cd /
 
