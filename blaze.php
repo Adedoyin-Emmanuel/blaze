@@ -176,7 +176,7 @@
                     </label>
                     <br/>
 
-                    <input type="checkbox" name="git_start" class="form-check-input"> start git bash default
+                    <input type="checkbox" name="git_start" class="form-check-input"> start git bash (by default)
                 </div>
 
 

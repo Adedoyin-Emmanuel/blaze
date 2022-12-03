@@ -31,37 +31,14 @@
 
 					rem start the user's server choice next
 				
-										rem client's default server => XAMPP SERVER
-
-										cd/
-
-										cd xampp
-
-										start xampp-control.exe
+										
 									 
 					rem start the user's version control choice next.
 
-				
-										start www.github.com
-									 
+				 
 					rem start the user's terminal next
-				
-										start cmd
-									 
+				 
 					rem start the user's version control sytem next
-				
-										cd /
-										cd Program Files\Git
-
-										start git-bash.exe
-									 
+				 
 					rem start the default websites next
 				
-
-									start www.stackoverflow.com
-
-								
-
-									start  www.github.com/Adedoyin-Emmanuel
-
-								
