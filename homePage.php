@@ -232,7 +232,7 @@
 
 
 
-      <div class="container-fluid bg-cs-caurosel p-0">
+      <div class="container-fluid bg-cs-caurosel p-0" style="background: lightskyblue;">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0 " style="overflow-x: hidden;"><path fill="#fff" fill-opacity="1" d="M0,64L120,85.3C240,107,480,149,720,144C960,139,1200,85,1320,58.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
           <h2 class="text-capitalize text-center text-light fw-bold">contact us!</h2>
 
