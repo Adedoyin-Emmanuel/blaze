@@ -26,12 +26,17 @@ Blaze was developed https://github.com/adedoyin-emmanuel a passion oriented full
 
 ## Live Link
 
-https://blazedev.herokuapp.com
+http://blaze.rf.gd
+
+https://blaze.rf.gd
 
 ## Read The Docs
 
-https://blazedev.herokuapp.com/blazeDocs.php
+http://blaze.rf.gd/blazeDocs.php
+
+https://blaze.rf.gd/blazeDocs.php
 
 ## About Blaze
 
-https://blazedev.herokuapp.com/about.php
+http://blaze.rf.gd/about.php
+https://blaze.rf.gd/about.php
