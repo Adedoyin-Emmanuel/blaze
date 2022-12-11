@@ -72,20 +72,21 @@
 
 
 <!-- second hero section -->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-config='{"interval":2000,"ride":carousel,}'>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-config='{"interval":2000,"ride":carousel}'>
     <div class="carousel-indicators" >
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active bg-cs-caurosel">
        
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-light text-dark" href="#">Sign up today</a></p>
+            <h2 class="fs-2 text-capitalize py-md-5 py-3 fw-bold">open multiple softwares with blaze!</h2>
+            <p class="fs-5 py-3">With blaze, you can open multiple software applications at once!</p>
+            <p><a class="btn btn-lg btn-light text-dark" href="#">Join the waitlist</a></p>
           </div>
         </div>
       </div>
@@ -93,23 +94,37 @@
        
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Built for every computer user!</h2>
+            <p class="fs-5 py-3">Yes! blaze was built for developers and non developers</p>
             <p><a class="btn btn-lg btn-light text-dark" href="#">Learn more</a></p>
           </div>
         </div>
       </div>
+
       <div class="carousel-item bg-cs-caurosel">
        
         <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-light text-dark" href="#">Browse gallery</a></p>
+          <div class="carousel-caption text-start">
+            <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Software with minimal configurations!</h2>
+            <p class="fs-5 py-3">With minimal or zero configurations, you can start using blaze today!</p>
+            <p><a class="btn btn-lg btn-light text-dark" href="#">Read the docs!</a></p>
           </div>
         </div>
       </div>
+
+      <div class="carousel-item bg-cs-caurosel">
+       
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Built with rich features for developers</h2>
+            <p class="fs-5 py-3">Are you a developer? Yes, Blaze was built with rich support for developers :)</p>
+            <p><a class="btn btn-lg btn-light text-dark" href="#">Read the docs!</a></p>
+          </div>
+        </div>
+      </div>
+
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -124,7 +139,7 @@
 
 
         <div class="faqs my-5 py-5 ">
-             <h5 class="text-capitalize fs-5 my-4 text-md-right text-sm-center p-2">frequently asked questions (FAQ's)</h5>
+             <h3 class="text-capitalize fs-3 my-4 text-md-right text-sm-center p-2">frequently asked questions (FAQ's)</h3>
 
             <div class="accordion " id="accordionExample" >
                   <div class="accordion-item">
