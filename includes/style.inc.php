@@ -128,6 +128,10 @@
 		outline: 2px solid white;
 	}
 
+	.wave{
+		transform:translateY(0px);
+	}
+
 	#allProduct,
 	#footerText {
 		font-weight: 600;

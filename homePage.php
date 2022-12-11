@@ -72,17 +72,19 @@
 
 
 <!-- second hero section -->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-config='{"interval":2000,"ride":carousel}'>
+  <div id="myCarousel" class="carousel slide bg-cs-caurosel" data-bs-ride="carousel" data-bs-config='{"interval":2000,"ride":carousel}'>
     <div class="carousel-indicators" >
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner bg-cs-caurosel">
+
       <div class="carousel-item active bg-cs-caurosel">
-       
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0 wave" style="overflow-x: hidden;"><path fill="#fff" fill-opacity="1" d="M0,64L720,160L1440,96L1440,0L720,0L0,0Z"></path></svg>
         <div class="container">
+
           <div class="carousel-caption text-start">
             <h2 class="fs-2 text-capitalize py-md-5 py-3 fw-bold">open multiple softwares with blaze!</h2>
             <p class="fs-5 py-3">With blaze, you can open multiple software applications at once!</p>
@@ -91,7 +93,7 @@
         </div>
       </div>
       <div class="carousel-item bg-cs-caurosel">
-       
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0 wave" style="overflow-x: hidden;"><path fill="#fff" fill-opacity="1" d="M0,64L720,160L1440,96L1440,0L720,0L0,0Z"></path></svg>
         <div class="container">
           <div class="carousel-caption">
             <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Built for every computer user!</h2>
@@ -102,7 +104,7 @@
       </div>
 
       <div class="carousel-item bg-cs-caurosel">
-       
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0 wave" style="overflow-x: hidden;"><path fill="#fff" fill-opacity="1" d="M0,64L720,160L1440,96L1440,0L720,0L0,0Z"></path></svg>
         <div class="container">
           <div class="carousel-caption text-start">
             <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Software with minimal configurations!</h2>
@@ -113,7 +115,7 @@
       </div>
 
       <div class="carousel-item bg-cs-caurosel">
-       
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0 wave" style="overflow-x: hidden;"><path fill="#fff" fill-opacity="1" d="M0,64L720,160L1440,96L1440,0L720,0L0,0Z"></path></svg>
         <div class="container">
           <div class="carousel-caption text-start">
             <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Built with rich features for developers</h2>
@@ -222,24 +224,35 @@
 
 
 
+</div>     
+
+</div>
+</div>
 </div>
 
 
 
+      <div class="container-fluid bg-cs-caurosel p-0">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0 " style="overflow-x: hidden;"><path fill="#fff" fill-opacity="1" d="M0,64L120,85.3C240,107,480,149,720,144C960,139,1200,85,1320,58.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+          <h2 class="text-capitalize text-center text-light fw-bold">contact us!</h2>
 
-            
-</div>
+      <form class="form m-auto p-3">
+        <div class="mb-3">
+          <label for="name" class="form-label text-capitalize">full name</label>
+          <input type="name" class="form-control p-3" id="name" aria-describedby="nameHelp">
+          
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label text-capitalize">email address</label>
+          <input type="email" class="form-control p-3" id="email">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        
+        <button type="submit" class="btn btn-light">Submit</button>
+    </form>
 
-</div>
-
-       
-
-
-
-</div>
-
-
-
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0"><path fill="#fff" fill-opacity="1" d="M0,192L720,128L1440,96L1440,320L720,320L0,320Z"></path></svg>
+      </div>
 
 <script>
 
