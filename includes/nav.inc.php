@@ -275,10 +275,12 @@
 
     function openNav() {
         document.getElementById("mySidenav").style.width = "100%";
+        document.querySelector("body").style.overflow="hidden";
     }   
 
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
+        document.querySelector("body").style.overflow="scroll";
     }
 
 
