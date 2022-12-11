@@ -23,14 +23,7 @@
 		    font-family: newFont;
 		    src: url(components/poppins.ttf);
 		}
-		body{
 			
-			background:ghostwhite;
-
-			color:black;
-			
-		}
-
 		*{
 			font-family: newFont;
 		}
@@ -57,10 +50,6 @@
 		    display: none;
 		   }
 
-/*
-	    input[type=text],input[type=password],input[type=search],input[type=number],input[type=date],textarea:-webkit-autofill,input[type=text],input[type=password],input[type=search],input[type=number],input[type=date],textarea:-webkit-autofill:hover,input[type=text],input[type=password],input[type=search],input[type=number],input[type=date],textarea:-webkit-autofill:focus,input[type=text],input[type=password],input[type=search],.input,input[type=number],input[type=date]:-webkit-autofill:active{
-	          -webkit-box-shadow: 0 0 0 30px whitesmoke inset !important;
-	    }*/
 	    textarea{
 	      
 	      background-color:#343a40;

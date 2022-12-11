@@ -4,12 +4,6 @@
 		src: url(components/poppins.ttf);
 	}
 
-	body {
-		background: ghostwhite;
-
-		color:black;
-
-	}
 
 	#spinner {
 		background: ghostwhite;
@@ -24,16 +18,13 @@
 
 
 
+
 	* {
 		font-family: newFont;
 	}
 
 
-	.product_1 {
-		cursor: pointer;
-	}
 
-	.form {}
 
 	.logo_animate {
 		animation: zoom 1s linear 1;
@@ -88,7 +79,7 @@
 
         }
 
-        ul > li.nav-item:hover {
+        ul.header > li.nav-item:hover {
             background: lightblue;
             outline: none;
             border-radius: 20px;
@@ -97,7 +88,7 @@
 
         }
 
-        ul > li.nav-item > a: hover{
+        ul.header > li.nav-item > a: hover{
           border: none;
           outline: none;
         }
@@ -106,20 +97,6 @@
 
     }
 
-	#searchProduct,
-	.form-control {
-		border: none;
-		outline: none;
-		font-weight: 300;
-	}
-
-	#addNewProduct {
-		font-weight: 600;
-	}
-
-	.time_added {
-		font-size: 10px;
-	}
 
 	label {
 		font-size: 0.9rem;
@@ -176,6 +153,10 @@
 
 	.bg-dark {
 		background-color: #212529 !important;
+	}
+
+	.bg-cs-caurosel{
+		background:lightskyblue;
 	}
 
 	.footer-bg {	 

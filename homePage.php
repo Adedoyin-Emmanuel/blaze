@@ -14,6 +14,19 @@
         
 
 
+    .carousel {
+      margin-bottom: 4rem;
+    }
+  
+    .carousel-caption {
+      bottom: 3rem;
+      z-index: 10;
+    }
+    .carousel-item {
+      height: 32rem;
+    }
+
+
     </style>
 </head>
 
@@ -27,60 +40,91 @@
 
     </div>
 
-<div class="container-fluid text-dark">
+<!-- hero section -->
 
-<div class="row d-flex py-5  flex-md-row" id="content-contain">
+<div class="container-fluid text-dark col-xl-12 col-xxl-8 px-2 py-5" style="overflow-x:hidden" id="hero">
 
-                            
-          
-        <div class="img-container col p-3 " id="img_container">
-                <img src="logo.png" height="400" width="400" class="img-fluid rounded" id="logo_legit">
+
+    <div class="row align-items-center g-lg-5 g-md-3 py-5 justify-content-around my-md-2">
+
+      <div class="col-md-6 col-sm-8 col  mx-auto col-lg-5 d-flex align-items-center m-auto my-md-2 my-5" id="img-container">
+
+          <img src="logo.png" class="img-fluid m-auto" >
+
+
+      </div>
+
+
+      <div class="col-lg-7 text-center text-lg-start my-md-3">
+        <h1 class="display-6 fw-bold  lh-1 mb-3 text-capitalize text-start text-md-center text-lg-start px-2 px-md-0">Launch multiple softwares at once</h1>
+        <p class="col-lg-10 fs-5 p-2 text-start text-lg-start text-dark">Blaze is a free web application built to bootstrap development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥</p>
+
+          <button class="btn btn-primary bg-cs border-0 btn-lg text-capitalize mx-md-2 get_started">Join the waitlist</button>
+
+      </div>
+
+
+    </div>
+
+  
+  </div>
+
+
+
+<!-- second hero section -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-config='{"interval":2000,"ride":carousel,}'>
+    <div class="carousel-indicators" >
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-cs-caurosel">
+       
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-light text-dark" href="#">Sign up today</a></p>
+          </div>
         </div>
-            
-        <div class="text-container col  p-3 ">
-
- <h3 class="text-capitalize py-md-4 py-1 m-auto text-center m-auto" id="heading_typing">blaze <img class="img-fluid text-center" src="logo.png" height="40" width="50"></h3>
-                
-                            <article class="text-capitalize py-2 quick-desc" id="article">
-                                blaze is a free web application built to <code class=" fs-6 rounded-1 p-1 text-primary text-danger">BOOTSTRAP</code> development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥
-                            </article>
-               
-                   
-                                       <div class="get_started d-flex flex-column  justify-content-around align-items-start ">
-                                
-
-
-                                        <h5 class="fs-5 text-capitalize text-md-left m-auto my-3" id="nd_type">
-                                           let's Get you started!
-                                        </h5>
-
-
-                                        <article class="text-capitalize py-2 quick_desc " id="article">
-                                            to get started, join the waitlist to be among the first people to try blaze
-                                        </article>
-
-                                      
-                                        <button class="btn bg-cs border-0 btn-primary m-auto text-center text-capitalize my-2 get_started "><span class="fs-6 get_started">Join waitlist</span> <img class="img-fluid get_started" src="logo.png" style="width:40px" id="get_started"></button>
-
-                                        
-                                       <!--  <button class="btn btn-primary m-auto text-center text-capitalize my-2 get_started "><span class="fs-6 get_started">try blaze!</span> <img class="img-fluid get_started" src="logo.png" height="40" width="50" id="get_started"></button>
-  -->
-
-
-                        </div>
-                </section>
+      </div>
+      <div class="carousel-item bg-cs-caurosel">
+       
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-light text-dark" href="#">Learn more</a></p>
+          </div>
         </div>
+      </div>
+      <div class="carousel-item bg-cs-caurosel">
+       
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-light text-dark" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
-      <!--   <section class="reviews my-5">
-                    <h5 class="text-capitalize px-4">reviews from our users</h5>
 
-
-
-        </section> -->
 
         <div class="faqs my-5 py-5 ">
-             <h5 class="text-capitalize fs-5 my-4 text-md-right text-sm-center">frequently asked questions (FAQ's)</h5>
+             <h5 class="text-capitalize fs-5 my-4 text-md-right text-sm-center p-2">frequently asked questions (FAQ's)</h5>
 
             <div class="accordion " id="accordionExample" >
                   <div class="accordion-item">
@@ -192,22 +236,7 @@
         $.noConflict();
 
 
-        // $("#get_started, .get_started").click(()=>{
-
-        //     $("#animation_logo").addClass("logo_animate");
-        //        const $legit_logo = document.getElementById("logo_legit");
-
-        //            // Code for Chrome, Safari and Opera
-        //         $legit_logo.addEventListener("webkitAnimationEnd", navigate_user("blaze.php"));
-
-        //         // Standard syntax
-        //         $legit_logo.addEventListener("animationend", navigate_user("blaze.php"));
-
-              
-        // });
-
-
-        $("#get_started, .get_started").click(()=>{
+        $(".get_started").click(()=>{
             navigate_user("waitlist.php");
         });
 

@@ -9,7 +9,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    
+    background: lightskyblue;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -92,14 +92,19 @@
     
     }
 
+    .big_screen:hover{
+      cursor: pointer;
+    }
+
+
 
 </style>
 <nav class="hor-nav w-100  " style="position:fixed; width:100%; z-index:1000;">
 
 
-<ul class="nav d-flex align-items-start justify-content-start px-3" style=" background: lightskyblue;">
-<span class="                                                                           text-light text-center p-1 my-1  rounded-3 d-md-none" style="cursor:pointer; width:40px; height:40px; font-size:20px; background: gray;" onclick="openNav()">&#9776</span>
-<div id="mySidenav" class="sidenav bg-primary">
+<ul class="nav d-flex align-items-start justify-content-start px-3 header" style=" background: lightskyblue;">
+<span class="                                                                           text-light text-center p-1 my-1  rounded-1 d-md-none" style="cursor:pointer; width:40px; height:40px; font-size:20px; background: lightblue; border:1px solid #fff" onclick="openNav()">&#9776</span>
+<div id="mySidenav" class="sidenav ">
   
   <a href="javascript:void(0)" class="closebtn  text-center text-danger" onclick="closeNav()">&times;</a>
 
@@ -290,41 +295,41 @@
     $(document).ready(($)=>{
 
 
-    function darkMode(){
+    // function darkMode(){
 
 
 
 
-          //get all the elements
-        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section, .option, h1, h3, h4, h5, h6, #btn-toggle, .card, table, td, th");
+    //       //get all the elements
+    //     let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section, .option, h1, h3, h4, h5, h6, #btn-toggle, .card, table, td, th");
 
       
-        let $footer = $("#footer");
-        let $footer_desc =  $("#footer_text");
+    //     let $footer = $("#footer");
+    //     let $footer_desc =  $("#footer_text");
 
         
-        let $sideNav = $("#mySidenav");
-        $sideNav.addClass("text-light");
-        $sideNav.removeClass("bg-primary");
-        $sideNav.css({"background":"#121117", "color":"#fff"});
-        $("#form").addClass("bg-dark");
-        $("#form").css({"border":"none"});
+    //     let $sideNav = $("#mySidenav");
+    //     $sideNav.addClass("text-light");
+    //     $sideNav.removeClass("bg-primary");
+    //     $sideNav.css({"background":"#121117", "color":"#fff"});
+    //     $("#form").addClass("bg-dark");
+    //     $("#form").css({"border":"none"});
 
-        $("#waitlist").removeClass("text-dark");
-        $("#waitlist").addClass("text-light");
-        $("#waitlist").removeClass("bg-light");
-        $("#waitlist").addClass("bg-dark");
-        $("select,#input").removeClass("text-dark");
-        $("select,#input").addClass("text-light");
+    //     $("#waitlist").removeClass("text-dark");
+    //     $("#waitlist").addClass("text-light");
+    //     $("#waitlist").removeClass("bg-light");
+    //     $("#waitlist").addClass("bg-dark");
+    //     $("select,#input").removeClass("text-dark");
+    //     $("select,#input").addClass("text-light");
 
-        $("select,#input").css({"background":"#343a40 ","border":"none"});
+    //     $("select,#input").css({"background":"#343a40 ","border":"none"});
 
-       // $(".accordion-item").css({"background":"#121117", "color":"#fff"});
-        // $(".input").css({"-webkit-box-shadow": "0 0 0 30px #343a40  inset !important"});
-        $mainBody.css({"background":"#121117", "color":"#fff"});
+    //    // $(".accordion-item").css({"background":"#121117", "color":"#fff"});
+    //     // $(".input").css({"-webkit-box-shadow": "0 0 0 30px #343a40  inset !important"});
+    //     $mainBody.css({"background":"#121117", "color":"#fff"});
 
               
-    }
+    // }
 
 
     function lightMode(){
@@ -339,7 +344,7 @@
         
         $sideNav.addClass("text-light");
         $sideNav.css({"color":"white"});
-        $sideNav.addClass("bg-primary");
+  
 
         $("#nav_text_sm").css({"color":"white","background":"none"});
         $("#nav_text_sm").addClass("text-light"); 
@@ -356,10 +361,10 @@
         $("select,#input").removeClass("text-light");
         $("select,#input").addClass("text-dark");
 
-        $("select,#input").css({"background":"aliceblue","border":"1px solid grey"});
+        $("select,#input").css({"background":"white","border":"1px solid grey"});
 
         // $(".input").css({"-webkit-box-shadow": "0 0 0 30px azure inset !important"});
-        $mainBody.css({"background":"azure", "color":"#000"});
+        $mainBody.css({"background":"white", "color":"#000"});
 
       
     }
@@ -372,7 +377,7 @@
        
             if($mode === "dark"){
 
-              darkMode();
+              //darkMode();
               
             }else{
               lightMode();

@@ -26,7 +26,7 @@
 <!-- <div class="b-example-divider"></div>
 
  -->
-<div class="container p-3">
+<div class="container-fluid p-3">
   <footer class="py-5">
     <div class="row d-flex justify-content-between">
       <div class="col-6 col-md-2 mb-3">
