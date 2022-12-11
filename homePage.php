@@ -56,7 +56,7 @@
 
 
       <div class="col-lg-7 text-center text-lg-start my-md-3">
-        <h1 class="display-6 fw-bold  lh-1 mb-3 text-capitalize text-start text-md-center text-lg-start px-2 px-md-0">Launch multiple softwares at once</h1>
+        <h1 class="display-6 fw-bold  lh-1 mb-3 text-capitalize text-start text-md-center text-lg-start px-2 px-md-0">Launch multiple softwares at once!</h1>
         <p class="col-lg-10 fs-5 p-2 text-start text-lg-start text-dark">Blaze is a free web application built to bootstrap development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥</p>
 
           <button class="btn btn-primary bg-cs border-0 btn-lg text-capitalize mx-md-2 get_started">Join the waitlist</button>
