@@ -209,7 +209,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
                   <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                         who developed blaze?
+                         who developed blaze
                   </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
