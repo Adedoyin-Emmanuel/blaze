@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="includes/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <?php require_once "includes/component.inc.php" ?>
 
     <?php require_once "includes/style.inc.php" ?>
@@ -49,14 +53,14 @@
 
       <div class="col-md-6 col-sm-8 col  mx-auto col-lg-5 d-flex align-items-center m-auto my-md-2 my-5" id="img-container">
 
-          <img src="logo.png" class="img-fluid m-auto" >
+          <img src="logo.png" class="img-fluid m-auto" data-aos="fade-in-right">
 
 
       </div>
 
 
       <div class="col-lg-7 text-center text-lg-start my-md-3">
-        <h1 class="display-6 fw-bold  lh-1 mb-3 text-capitalize text-start text-md-center text-lg-start px-2 px-md-0">Launch multiple softwares at once!</h1>
+        <h1 class="display-6 fw-bold  lh-1 mb-3 text-capitalize text-start text-md-center text-lg-start px-2 px-md-0 animate__animated animate__bounce">Launch multiple softwares at once!</h1>
         <p class="col-lg-10 fs-5 p-2 text-start text-lg-start text-dark">Blaze is a free web application built to bootstrap development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥</p>
 
           <button class="btn btn-primary bg-cs border-0 btn-lg text-capitalize mx-md-2 get_started">Join the waitlist</button>
@@ -140,7 +144,8 @@
 
 
 
-        <div class="faqs my-5 py-5 ">
+        <div class="faqs my-5 py-5 " data-aos="zoom-in-up" data-aos-delay="10"
+    data-aos-duration="1000">
              <h3 class="text-capitalize fs-3 my-4 text-md-right text-sm-center p-2">frequently asked questions (FAQ's)</h3>
 
             <div class="accordion " id="accordionExample" >
@@ -232,9 +237,15 @@
 
 
 
-      <div class="container-fluid bg-cs-caurosel p-0" style="background: lightskyblue;">
-   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0 " style="overflow-x: hidden;"><path fill="#fff" fill-opacity="1" d="M0,64L120,85.3C240,107,480,149,720,144C960,139,1200,85,1320,58.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
-          <h2 class="text-capitalize text-center text-light fw-bold">contact us!</h2>
+      <div class="container-fluid bg-cs-caurosel p-0" style="background:
+      lightskyblue;" data-aos="zoom-out" data-aos-delay="10"
+      data-aos-duration="1000"> <svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 319" class="p-0 m-0 " style="overflow-x:
+      hidden;"><path fill="#fff" fill-opacity="1"
+      d="M0,64L120,85.3C240,107,480,149,720,144C960,139,1200,85,1320,58.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+      <h2 class="text-capitalize text-center text-light fw-bold"
+      data-aos="zoom-out-right" data-aos-delay="10"
+      data-aos-duration="1000" >contact us!</h2>
 
       <form class="form m-auto p-3">
         <div class="mb-3">
@@ -251,10 +262,13 @@
         <button type="submit" class="btn btn-light">Submit</button>
     </form>
 
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0"><path fill="#fff" fill-opacity="1" d="M0,192L720,128L1440,96L1440,320L720,320L0,320Z"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0" style="transform: translateY(5px);"><path fill="#fff" fill-opacity="1" d="M0,192L720,128L1440,96L1440,320L720,320L0,320Z"></path></svg>
       </div>
 
 <script>
+
+    //init AOS
+    AOS.init();
 
     function navigate_user (args) {
          location.href = args;

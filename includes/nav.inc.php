@@ -292,7 +292,7 @@
 
     
 
-    $(document).ready(($)=>{
+    // $(document).ready(($)=>{
 
 
     // function darkMode(){
@@ -332,76 +332,76 @@
     // }
 
 
-    function lightMode(){
+    // function lightMode(){
 
 
 
 
-          //get all the elements
-        let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section, .option, h1, h3, h4, h5, h6, #btn-toggle, .card, table, td, th");
+    //       //get all the elements
+    //     let $mainBody = $(".container-fluid, #body, #heading_typing, .quick-desc, #nd_type, .sidenav, #article, .section, #section, .option, h1, h3, h4, h5, h6, #btn-toggle, .card, table, td, th");
 
-        let $sideNav = $("#mySidenav");
+    //     let $sideNav = $("#mySidenav");
         
-        $sideNav.addClass("text-light");
-        $sideNav.css({"color":"white"});
+    //     $sideNav.addClass("text-light");
+    //     $sideNav.css({"color":"white"});
   
 
-        $("#nav_text_sm").css({"color":"white","background":"none"});
-        $("#nav_text_sm").addClass("text-light"); 
-        document.body.style.background = "azure";
-        $("#form").removeClass("bg-dark");
-        $("#waitlist").removeClass("text-light");
-        $("#waitlist").addClass("text-dark");
-        $("#waitlist").removeClass("bg-dark");
-        $("#waitlist").addClass("bg-light");
+    //     $("#nav_text_sm").css({"color":"white","background":"none"});
+    //     $("#nav_text_sm").addClass("text-light"); 
+    //     document.body.style.background = "azure";
+    //     $("#form").removeClass("bg-dark");
+    //     $("#waitlist").removeClass("text-light");
+    //     $("#waitlist").addClass("text-dark");
+    //     $("#waitlist").removeClass("bg-dark");
+    //     $("#waitlist").addClass("bg-light");
 
-        $("#form").addClass("shadow-sm");
-        $("#form").css({"border":"1px solid black"});
+    //     $("#form").addClass("shadow-sm");
+    //     $("#form").css({"border":"1px solid black"});
 
-        $("select,#input").removeClass("text-light");
-        $("select,#input").addClass("text-dark");
+    //     $("select,#input").removeClass("text-light");
+    //     $("select,#input").addClass("text-dark");
 
-        $("select,#input").css({"background":"white","border":"1px solid grey"});
+    //     $("select,#input").css({"background":"white","border":"1px solid grey"});
 
-        // $(".input").css({"-webkit-box-shadow": "0 0 0 30px azure inset !important"});
-        $mainBody.css({"background":"white", "color":"#000"});
+    //     // $(".input").css({"-webkit-box-shadow": "0 0 0 30px azure inset !important"});
+    //     $mainBody.css({"background":"white", "color":"#000"});
 
       
-    }
+    // }
 
 
 
-       setInterval(()=>{
+    //    setInterval(()=>{
 
-           let $mode = localStorage.getItem("ModeToggle") || "light";
+    //        let $mode = localStorage.getItem("ModeToggle") || "light";
        
-            if($mode === "dark"){
+    //         if($mode === "dark"){
 
-              //darkMode();
+    //           //darkMode();
               
-            }else{
-              lightMode();
-            }
+    //         }else{
+    //           lightMode();
+    //         }
 
-       },100);
+    //    },100);
 
-        $(".modes, #mode").click(()=>{
-         $mode = localStorage.getItem("ModeToggle");
-             if($mode === "dark"){
+    //     $(".modes, #mode").click(()=>{
+    //      $mode = localStorage.getItem("ModeToggle");
+    //          if($mode === "dark"){
 
-              darkMode();
-              localStorage.setItem("ModeToggle", "light");
-              //location.reload();
+    //           darkMode();
+    //           localStorage.setItem("ModeToggle", "light");
+    //           //location.reload();
               
-            }else{
+    //         }else{
 
-              lightMode();
-              localStorage.setItem("ModeToggle", "dark");
-              //location.reload();
-            }
+    //           lightMode();
+    //           localStorage.setItem("ModeToggle", "dark");
+    //           //location.reload();
+    //         }
 
                                 
-        });
+    //     });
 
 
 
@@ -410,7 +410,7 @@
 
 
 
-    });
+    // });
 
 
 

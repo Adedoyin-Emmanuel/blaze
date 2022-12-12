@@ -49,7 +49,9 @@
 		   ::-webkit-scrollbar-corner{
 		    display: none;
 		   }
-
+		   .bg-cs-caurosel{
+		background:lightskyblue;
+	}
 	    textarea{
 	      
 	      background-color:#343a40;
