@@ -9,9 +9,11 @@
 		<script src="components/bootstrap.js"></script>
 		<script src="components/typingEffect.js"></script>
 
-
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+		</script>
 		<link rel="stylesheet" type="text/css" href="components/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="components/msgConfig.css">
+		<!-- <link rel="stylesheet" type="text/css" href="components/msgConfig.css"> -->
 		<link rel="stylesheet" type="text/css" href="components/three-dots.css">
 		<link rel="icon" href="logo.png">
 		<style>
@@ -31,14 +33,13 @@
 		 ::-webkit-scrollbar{
 		    width:5px;
 		    height:5px;
-		    background:#121212;
-
+		   	background:lightskyblue;
 		  }
 
 		  ::-webkit-scrollbar-thumb{
 		    border-radius:20px;
 		    opacity:.7;
-		    background: lightblue;
+		    background: #fff;
 		    width:2px;
 		  }
 
@@ -50,13 +51,9 @@
 		    display: none;
 		   }
 		   .bg-cs-caurosel{
-		background:lightskyblue;
-	}
-	    textarea{
-	      
-	      background-color:#343a40;
-	    }
-
+				background:lightskyblue;
+		   }
+	   
 	    #spinner{
 				background: ghostwhite;
 				height: 100vh;
@@ -79,3 +76,19 @@
 
 	</script>
 
+	<!-- Google tag (gtag.js) -->
+	<!-- google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4GPGZ5DFP8"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-4GPGZ5DFP8');
+	</script>
+
+	<script type="text/javascript">
+	   (function(){
+	      emailjs.init("SJW9ktRhuAlOfvcXD");
+	   })();
+	</script>

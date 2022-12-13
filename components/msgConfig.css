@@ -1,10 +1,10 @@
 .swal-container{
-	background:#212529;
+	background:lightskyblue;
 	color:white;
 }
 
 .swal2-modal,.swal-container,.swal2-toast,.swal2-toast-shown{
-	background:#212529;
+	background:lightskyblue;
 	color:white;
 }
 

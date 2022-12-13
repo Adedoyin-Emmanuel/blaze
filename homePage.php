@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="includes/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <?php require_once "includes/component.inc.php" ?>
 
@@ -34,7 +35,7 @@
     </style>
 </head>
 
-<body id="body" >
+<body id="body" style="overflow-x: hidden;">
 
     <?php require_once "includes/nav.inc.php";?>
     <div  id="spinner" class="">
@@ -61,7 +62,7 @@
 
       <div class="col-lg-7 text-center text-lg-start my-md-3">
         <h1 class="display-6 fw-bold  lh-1 mb-3 text-capitalize text-start text-md-center text-lg-start px-2 px-md-0 animate__animated animate__bounce">Launch multiple softwares at once!</h1>
-        <p class="col-lg-10 fs-5 p-2 text-start text-lg-start text-dark">Blaze is a free web application built to bootstrap development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥</p>
+        <p class="col-lg-10 fs-5 p-2 text-start text-lg-start text-dark">Blaze is a free software application built to bootstrap development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥</p>
 
           <button class="btn btn-primary bg-cs border-0 btn-lg text-capitalize mx-md-2 get_started">Join the waitlist</button>
 
@@ -90,9 +91,9 @@
         <div class="container">
 
           <div class="carousel-caption text-start">
-            <h2 class="fs-2 text-capitalize py-md-5 py-3 fw-bold">open multiple softwares with blaze!</h2>
+            <h2 class="fs-2 text-capitalize py-md-5 py-3 fw-bold" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">open multiple softwares with blaze!</h2>
             <p class="fs-5 py-3">With blaze, you can open multiple software applications at once!</p>
-            <p><a class="btn btn-lg btn-light text-dark" href="#">Join the waitlist</a></p>
+            <p><a class="btn btn-lg btn-light text-dark" href="waitlist.php">Join the waitlist</a></p>
           </div>
         </div>
       </div>
@@ -102,7 +103,7 @@
           <div class="carousel-caption">
             <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Built for every computer user!</h2>
             <p class="fs-5 py-3">Yes! blaze was built for developers and non developers</p>
-            <p><a class="btn btn-lg btn-light text-dark" href="#">Learn more</a></p>
+            <p><a class="btn btn-lg btn-light text-dark" href="blazeDocs.php">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -113,7 +114,7 @@
           <div class="carousel-caption text-start">
             <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Software with minimal configurations!</h2>
             <p class="fs-5 py-3">With minimal or zero configurations, you can start using blaze today!</p>
-            <p><a class="btn btn-lg btn-light text-dark" href="#">Read the docs!</a></p>
+            <p><a class="btn btn-lg btn-light text-dark" href="blazeDocs.php">Read the docs!</a></p>
           </div>
         </div>
       </div>
@@ -124,7 +125,7 @@
           <div class="carousel-caption text-start">
             <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Built with rich features for developers</h2>
             <p class="fs-5 py-3">Are you a developer? Yes, Blaze was built with rich support for developers :)</p>
-            <p><a class="btn btn-lg btn-light text-dark" href="#">Read the docs!</a></p>
+            <p><a class="btn btn-lg btn-light text-dark" href="blazeDocs">Read the docs!</a></p>
           </div>
         </div>
       </div>
@@ -145,7 +146,7 @@
 
 
         <div class="faqs my-5 py-5 " data-aos="zoom-in-up" data-aos-delay="10"
-    data-aos-duration="1000">
+    data-aos-duration="1000" data-aos-offset="300" data-aos-easing="ease-in-sine">
              <h3 class="text-capitalize fs-3 my-4 text-md-right text-sm-center p-2">frequently asked questions (FAQ's)</h3>
 
             <div class="accordion " id="accordionExample" >
@@ -236,10 +237,10 @@
 </div>
 
 
-
+<!-- contact div -->
       <div class="container-fluid bg-cs-caurosel p-0" style="background:
       lightskyblue;" data-aos="zoom-out" data-aos-delay="10"
-      data-aos-duration="1000"> <svg xmlns="http://www.w3.org/2000/svg"
+      data-aos-duration="1000" data-aos-offset="300" data-aos-easing="ease-in-sine"> <svg xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 319" class="p-0 m-0 " style="overflow-x:
       hidden;"><path fill="#fff" fill-opacity="1"
       d="M0,64L120,85.3C240,107,480,149,720,144C960,139,1200,85,1320,58.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
@@ -247,7 +248,7 @@
       data-aos="zoom-out-right" data-aos-delay="10"
       data-aos-duration="1000" >contact us!</h2>
 
-      <form class="form m-auto p-3">
+      <form class="form m-auto p-3" action="?" method="POST" id="blaze-contact-form">
         <div class="mb-3">
           <label for="name" class="form-label text-capitalize">full name</label>
           <input type="name" class="form-control p-3" id="name" aria-describedby="nameHelp">
@@ -258,7 +259,12 @@
           <input type="email" class="form-control p-3" id="email">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        
+
+         <div class="mb-3">
+          <label for="message" class="form-label text-capitalize">Your message</label>
+          <textarea name="message" class="p-3 form-control" rows="2"></textarea>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6LfcunUjAAAAAEbJ6nRpbaAZaRcjHvnL8BOsLlzR"></div>
         <button type="submit" class="btn btn-light">Submit</button>
     </form>
 

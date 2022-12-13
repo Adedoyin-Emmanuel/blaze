@@ -92,7 +92,11 @@
     
     }
 
-    .big_screen:hover{
+    ul.big_screen_nav > li{
+      transition: .5s;
+    }
+
+    ul.big_screen_nav > li:hover{
       cursor: pointer;
     }
 

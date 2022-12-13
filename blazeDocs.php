@@ -8,10 +8,10 @@
     <?php require_once "includes/component.inc.php" ?>
 
     <?php require_once "includes/style.inc.php" ?>
-    <title>About Blaze</title>
+    <title>Blaze For Developers Documentation</title>
 
     <style>
-        
+
 
 
     </style>
@@ -24,12 +24,12 @@
             swal.fire({
             title:"Blaze For Non Devs",
             text:"Not a developer, read the docs for non developers",
-            icon:"info",
             allowOutsideClick:false,
             allowEscapeKey:false,
             showCancelButton:true,
             cancelButtonText:"Cancel",
             cancelButtonColor:"tomato",
+            confirmButtonColor:"lightskyblue",
             confirmButtonText:"Read Non Dev Docs!",
 
 
@@ -54,36 +54,36 @@
 
 <div class="container-fluid m-auto py-5">
 
-    <h3 class="fs-3 text-capitalize py-3 text-center">blaze documentation </h3>
+    <h3 class="fs-3 text-capitalize py-3 text-center fw-bold">blaze documentation </h3>
 
     
-        <h5 class="fs-5 text-capitalize px-1">STEP 1=> Operating system config</h5>
+        <h5 class="fs-5 text-capitalize px-1">STEP 1=> Operating system</h5>
     <section class="m-auto py-2 py-md-3 px-3">
         The first step to generate the blaze file is to generate the blaze file is to select your operating system, blaze functionalty is the same accross all operating system but for proper configuration, you have to select the operating system your machine is running on
     </section>
 
-      <h5 class="fs-5 text-capitalize px-1">STEP 2=> Code editor config</h5>
+      <h5 class="fs-5 text-capitalize px-1">STEP 2=> Code editor</h5>
 
     <section class="m-auto py-2 py-md-3 px-3">
-          you need to have a code editor selected before you can generate any blaze file, for now blaze is focused on programmers, we would release another version for non programmers later. we have built blaze to support multiple popular and beginner friendly code editors.   
+          You need to have a code editor selected before you can generate any blaze file, we would release another version for non programmers later. we have built blaze to support multiple popular and beginner friendly code editors like vs code, sublime text, brackets, notepad ++, notepad etc.   
     </section>
 
-    <h5 class="fs-5 text-capitalize px-1">STEP 3=> Default Browser Config</h5>
+    <h5 class="fs-5 text-capitalize px-1">STEP 3=> Default Browser</h5>
 
       <section class="m-auto py-2 py-md-3 px-3">
         We are assuming you are a web developer for you to enable blaze to run the browser of your choice for you when you want to code.. if you aren't a web developer but would love to have multiple tabs of stackover flow pages on your browser, Blaze also supports that.
 
     </section>
 
-    <h5 class="fs-5 text-capitalize px-1">STEP 4=> default server config</h5>
+    <h5 class="fs-5 text-capitalize px-1">STEP 4=> default server</h5>
 
       <section class="m-auto py-2 py-md-3 px-3">
-       Step 4 would assume you are a backend developer using PHP, Laravel, Codeigniter, or NODE JS for server side programming, if you would love to start your servers when you launch blaze file, you can also enable this by selecting your server type.
+       Step 4 would assume you are a backend developer using PHP, Laravel, Codeigniter, or NODE JS for server side programming, if you would love to start your servers when you launch blaze software, you can also enable this by selecting your server type.
 
     </section>
 
 
-    <h5 class="fs-5 text-capitalize px-1">STEP 5=> quick browser tab config</h5>
+    <h5 class="fs-5 text-capitalize px-1">STEP 5=> quick browser tab</h5>
 
       <section class="m-auto py-2 py-md-3 px-3">
         This feature is for those developers who would love to have stackover flow tabs, github tabs, google tabs opened by default to help aid development. Also for those who would love to have their programming language community tab open by default, you can enable this by typing the URL you want to load automatically, you seperate by commas.
@@ -94,8 +94,7 @@
     <h5 class="fs-5 text-capitalize px-1">Not a developer ?</h5>
 
       <section class="m-auto py-2 py-md-3 px-3">
-            We've got you covered... we have a special version of blaze for you
-            Wait for blaze 2.0, we would support all the apps you want to start by default when you want to work.... Till then, read more about <a class="text-uppercase text-decoration-none" href="homePage.php">BLAZE</a>
+            We've got you covered... there is another version of blaze for non developers, please read the documentation before using it! <a href="blazeDocsNonDevs.php">Blaze for non developers</a>
     </section>
 
 

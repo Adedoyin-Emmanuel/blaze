@@ -29,12 +29,12 @@
 
 <div class="container-fluid m-auto py-5">
 
-    <h3 class="fs-3 text-capitalize py-3 text-center">about blaze</h3>
+    <h3 class="fs-3 text-capitalize py-3 text-center fw-bold">about blaze</h3>
 
     
         <h5 class="fs-5 text-capitalize px-1">what is blaze ?</h5>
     <section class="m-auto py-2 py-md-3 px-3">
-        Blaze is a web application developed to bootstrap development. Blaze was mainly developed for programmers especially web developers who have to open their code editors, browsers and sometimes servers whenever they want to code. Notwithstanding, other programmers and also non programmers can also use it as Blaze comes with tons of capabilities. 
+        Blaze is a software application developed to bootstrap development. Blaze was mainly developed for programmers especially web developers who have to open their code editors, browsers and sometimes servers whenever they want to code. Notwithstanding, other programmers and also non programmers can also use it as Blaze comes with tons of capabilities. 
 
     </section>
 

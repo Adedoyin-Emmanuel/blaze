@@ -31,8 +31,7 @@ $(document).ready(($)=>{
 				}else{
 					swal.fire({
 						title:"Error",
-						text:$xhttp.responseText,
-						icon:"error",  
+						text:$xhttp.responseText,  
 						showConfirmButton:true,
 						showCancelButton:true,
 						confirmButtonText:"Regenerate",

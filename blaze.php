@@ -14,8 +14,6 @@
     <style>
         @media (max-width:567.98px) {
 
-            .img_small {}
-
             body {
                 background: ;
             }
@@ -83,7 +81,7 @@
                 <!-- operating system -->
                 <div class="form-group my-4">
                     <label for="operatingSystem" class="text-capitalize py-2">Select your operating system *</label>
-                    <select class="form-control text-light" style="background: #343a40 " name="operating_system" required>
+                    <select class="form-control" name="operating_system" required>
                         <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
                         <option class="option px-2 text-capitalize " value="1">windows OS</option>
                         <option class="option px-2 text-capitalize " value="2">Linux OS</option>
@@ -96,7 +94,7 @@
                 <div class="form-group my-4">
                     <label for="codeEditor" class="text-capitalize py-2">Select Text / Code Editor *</label>
 
-                    <select class="form-control text-light" style="background: #343a40 " name="code_editor" required>
+                    <select class="form-control" name="code_editor" required>
                         <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
 
                         <option class="option px-2 text-capitalize " value="1">Visual studio (VS Code) </option>
@@ -117,7 +115,7 @@
                 <div class="form-group my-4">
                     <label for="browserType" class="text-capitalize py-2">Select Browser *</label>
 
-                    <select class="form-control text-light" id="sel1" style="background: #343a40 " name="browser_type">
+                    <select class="form-control " id="sel1" name="browser_type">
                         <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
 
                         <option class="option px-2 text-capitalize " value="1">Chrome (recommended)</option>
@@ -134,7 +132,7 @@
                 <div class="form-group my-4">
                     <label for="browserType" class="text-capitalize py-2">Select server type</label>
 
-                    <select class="form-control text-light" id="sel1" style="background: #343a40 " name="server_type">
+                    <select class="form-control" id="sel1" name="server_type">
                         <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
 
                         <option class="option px-2 text-capitalize " value="1">Xampp Server</option>
@@ -159,7 +157,7 @@
                         choose the version control system to open by default
                     </label>
 
-                    <select class="form-control text-light" id="sel1" style="background: #343a40 " name="version_control_system">
+                    <select class="form-control" id="sel1" name="version_control_system">
                         <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
 
                         <option class="option px-2 text-capitalize " value="1">Github </option>
