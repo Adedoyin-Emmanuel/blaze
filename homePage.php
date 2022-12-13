@@ -9,6 +9,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="components/jquery.js"></script>
+    <script src="includes/processContactForm.inc.js"></script>
 
     <?php require_once "includes/component.inc.php" ?>
 

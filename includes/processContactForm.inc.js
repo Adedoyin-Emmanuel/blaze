@@ -1,7 +1,9 @@
 $(document).ready(($)=>{
 	$.noConflict();
+	
 
-	$form.on("submit",(e)=>{
+	$("form").on("submit",(e)=>{
+
 		e.preventDefault();
 
 		const $form = document.querySelector("form");
@@ -14,7 +16,7 @@ $(document).ready(($)=>{
         //                 console.log('FAILED...', error);
         // });
 
-		emailjs.sendForm('service_nj0ntp6', 'blaze-contact_form',$formData).then(()=>{
+		emailjs.sendForm('template_rdfwltq', 'blaze-contact_form',$form).then(()=>{
 			console.log("SUCCESS!")
 		}, (err)=>{
 			console.log("FAILED!",err);
