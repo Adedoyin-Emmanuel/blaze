@@ -264,7 +264,7 @@
           <label for="message" class="form-label text-capitalize">Your message</label>
           <textarea name="message" class="p-3 form-control" rows="2"></textarea>
         </div>
-        <div class="g-recaptcha" data-sitekey="6LfcunUjAAAAAEbJ6nRpbaAZaRcjHvnL8BOsLlzR"></div>
+        <div class="my-3 g-recaptcha" data-sitekey="6LfcunUjAAAAAEbJ6nRpbaAZaRcjHvnL8BOsLlzR"></div>
         <button type="submit" class="btn btn-light">Submit</button>
     </form>
 
