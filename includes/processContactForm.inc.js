@@ -16,7 +16,7 @@ $(document).ready(($)=>{
         //                 console.log('FAILED...', error);
         // });
 
-		emailjs.sendForm('template_rdfwltq', 'blaze-contact_form',$form).then(()=>{
+		emailjs.sendForm('service_nj0ntp6', 'blaze-contact_form',$form).then(()=>{
 			console.log("SUCCESS!")
 		}, (err)=>{
 			console.log("FAILED!",err);

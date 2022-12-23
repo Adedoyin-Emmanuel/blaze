@@ -14,9 +14,6 @@
     <style>
         @media (max-width:567.98px) {
 
-            body {
-                background: ;
-            }
 
             #content-contain {
                 display: flex;
@@ -41,7 +38,7 @@
 
             }
 
-            ul>li>a: hover {
+            ul>li>a:hover {
                 border: none;
                 outline: none;
             }

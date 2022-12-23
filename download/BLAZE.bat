@@ -31,7 +31,13 @@
 
 					rem start the user's server choice next
 				
-										
+										rem client's default server => WAMP SERVER
+
+										cd/
+
+										cd wamp
+
+										start wampmanager.exe
 									 
 					rem start the user's version control choice next.
 
