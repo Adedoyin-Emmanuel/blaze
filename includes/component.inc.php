@@ -8,9 +8,6 @@
 		<script src="components/jquery.js"></script>
 		<script src="components/bootstrap.js"></script>
 		<script src="components/typingEffect.js"></script>
-
-		<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 		</script>
 		<link rel="stylesheet" type="text/css" href="components/bootstrap.css">
 		<!-- <link rel="stylesheet" type="text/css" href="components/msgConfig.css"> -->

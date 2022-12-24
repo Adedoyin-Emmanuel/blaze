@@ -60,11 +60,6 @@
 	}
 
 	    @media (max-width:567.98px) {
-    
-        .img_small{
-            
-        }
-
 
         #content-contain{
             display: flex;
@@ -88,7 +83,7 @@
 
         }
 
-        ul.header > li.nav-item > a: hover{
+        ul.header > li.nav-item > a:hover{
           border: none;
           outline: none;
         }
@@ -172,7 +167,6 @@
 
 	#footer_text {
 		font-size: 0.9rem;
-		padding
 	}
 
 	/*create animation for the error div*/

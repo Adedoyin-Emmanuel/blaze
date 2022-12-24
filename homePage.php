@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="components/jquery.js"></script>
     <script src="includes/processContactForm.inc.js"></script>
 
@@ -66,7 +67,7 @@
         <h1 class="display-6 fw-bold  lh-1 mb-3 text-capitalize text-start text-md-center text-lg-start px-2 px-md-0 animate__animated animate__bounce">Launch multiple softwares at once!</h1>
         <p class="col-lg-10 fs-5 p-2 text-start text-lg-start text-dark">Blaze is a free software application built to bootstrap development. with blaze, you can get your code editors, servers, files, browsers set up within seconds at a blazing speed 🔥</p>
 
-          <button class="btn btn-primary bg-cs border-0 btn-lg text-capitalize mx-md-2 get_started">Join the waitlist</button>
+          <button class="btn btn-primary bg-cs border-0 btn-lg text-capitalize mx-md-2 get_started">Get Started!</button>
 
       </div>
 
@@ -95,7 +96,7 @@
           <div class="carousel-caption text-start">
             <h2 class="fs-2 text-capitalize py-md-5 py-3 fw-bold" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">open multiple softwares with blaze!</h2>
             <p class="fs-5 py-3">With blaze, you can open multiple software applications at once!</p>
-            <p><a class="btn btn-lg btn-light text-dark" href="waitlist.php">Join the waitlist</a></p>
+            <p><a class="btn btn-lg btn-light text-dark" href="waitlist.php">Get Started!</a></p>
           </div>
         </div>
       </div>
@@ -127,7 +128,7 @@
           <div class="carousel-caption text-start">
             <h2 class="fs-2 text-capitalize py-md-5 fw-bold">Built with rich features for developers</h2>
             <p class="fs-5 py-3">Are you a developer? Yes, Blaze was built with rich support for developers :)</p>
-            <p><a class="btn btn-lg btn-light text-dark" href="blazeDocs">Read the docs!</a></p>
+            <p><a class="btn btn-lg btn-light text-dark" href="blazeDocs.php">Read the docs!</a></p>
           </div>
         </div>
       </div>
@@ -160,7 +161,7 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                       <div class="accordion-body text-capitalize">
-                        <strong>blaze</strong> is a free web application that is built for developers to  bootstrap  development.
+                        <strong>blaze</strong> is a free software that is built for developers to  bootstrap  development. It is a software that opens multiple softwares!
                       </div>
                     </div>
                   </div>
@@ -250,15 +251,15 @@
       data-aos="zoom-out-right" data-aos-delay="10"
       data-aos-duration="1000" >contact us!</h2>
 
-      <form class="form m-auto p-3" action="?" method="POST" id="blaze-contact-form">
+      <form class="form m-auto p-3" id="blaze-contact-form">
         <div class="mb-3">
           <label for="name" class="form-label text-capitalize">full name</label>
-          <input type="name" class="form-control p-3" id="name" aria-describedby="nameHelp">
+          <input type="text" class="form-control p-3" id="user_name" name="user_name" aria-describedby="nameHelp">
           
         </div>
         <div class="mb-3">
           <label for="email" class="form-label text-capitalize">email address</label>
-          <input type="email" class="form-control p-3" id="email">
+          <input type="email" class="form-control p-3" id="user_email" name="user_email">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
 
@@ -267,7 +268,7 @@
           <textarea name="message" class="p-3 form-control" rows="2"></textarea>
         </div>
         <div class="my-3 g-recaptcha" data-sitekey="6LfcunUjAAAAAEbJ6nRpbaAZaRcjHvnL8BOsLlzR"></div>
-        <button type="submit" class="btn btn-light">Submit</button>
+        <button type="submit" class="btn btn-light" id="submit_btn">Submit</button>
     </form>
 
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="p-0 m-0" style="transform: translateY(5px);"><path fill="#fff" fill-opacity="1" d="M0,192L720,128L1440,96L1440,320L720,320L0,320Z"></path></svg>
@@ -287,7 +288,7 @@
 
 
         $(".get_started").click(()=>{
-            navigate_user("waitlist.php");
+            navigate_user("blaze.php");
         });
 
     });

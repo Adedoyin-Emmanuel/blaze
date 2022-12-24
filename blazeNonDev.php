@@ -14,13 +14,6 @@
 
     <style>
         @media (max-width:567.98px) {
-
-            .img_small {}
-
-            body {
-                background: ;
-            }
-
             #content-contain {
                 display: flex;
                 flex-direction: column;
@@ -44,7 +37,7 @@
 
             }
 
-            ul>li.nav-item>a: hover {
+            ul>li.nav-item>a:hover {
                 border: none;
                 outline: none;
             }

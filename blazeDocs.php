@@ -97,6 +97,9 @@
             We've got you covered... there is another version of blaze for non developers, please read the documentation before using it! <a href="blazeDocsNonDevs.php">Blaze for non developers</a>
     </section>
 
+    <button class="btn btn-primary bg-cs  border-0 text-capitalize mx-3 my-3">
+      <a href="blazeNonDev.php" class="text-capitalize text-light text-decoration-none">use blaze!</a>
+    </button>
 
 
 

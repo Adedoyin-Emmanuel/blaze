@@ -29,6 +29,7 @@
           showCancelButton:true,
           cancelButtonText:"Cancel",
           cancelButtonColor:"tomato",
+          confirmButtonColor:"lightskyblue",
           confirmButtonText:"Read Dev Docs!",
 
 
@@ -76,6 +77,10 @@
 
        <p class="text-danger">Please not it isn't mandatory to do this for all 6 applications, you can configure for at least 2 different softwares!</p>
     </section>
+
+    <button class="btn btn-lg bg-cs">
+      <a href="blazeNonDev.php" class="text-capitalize text-light">use blaze!</a>
+    </button>
 
 
     <h5 class="fs-5 text-capitalize px-1">Are you a developer ?</h5>

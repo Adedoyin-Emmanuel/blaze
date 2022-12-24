@@ -1,26 +1,43 @@
 $(document).ready(($)=>{
 	$.noConflict();
-	
 
 	$("form").on("submit",(e)=>{
 
 		e.preventDefault();
 
 		const $form = document.querySelector("form");
-		const $formData = new FormData($form);
+		
+		//disable the button
+		const $submit_btn = document.getElementById("submit_btn");
 
+		$submit_btn.disabled = true;
 
-		// emailjs.sendForm('contact_service', 'contact_form', $formData).then((function() ){
-        //      console.log('SUCCESS!');
-        //  }, function(error) {
-        //                 console.log('FAILED...', error);
-        // });
+		emailjs.sendForm('service_mtg916s', 'blaze_contact_form', $form)
+			.then(function() {
+				swal.fire({
+					title:"Successful",
+					text:"Email sent successfully",
+					icon:"success",
+					confirmButtonColor:"lightskyblue",
+					cancelButtonColor:"tomato",
+					
+				});
 
-		emailjs.sendForm('service_nj0ntp6', 'blaze-contact_form',$form).then(()=>{
-			console.log("SUCCESS!")
-		}, (err)=>{
-			console.log("FAILED!",err);
-		});
+				$submit_btn.disabled = false;
+
+			}, function(error) {
+				swal.fire({
+					title:"Error",
+					text:error.text,
+					icon:"error",
+					confirmButtonColor:"lightskyblue",
+					cancelButtonColor:"tomato",
+					
+				});
+
+				$submit_btn.disabled = false;
+			});
+
 
 	});
 
