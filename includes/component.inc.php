@@ -8,6 +8,7 @@
 		<script src="components/jquery.js"></script>
 		<script src="components/bootstrap.js"></script>
 		<script src="components/typingEffect.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 		</script>
 		<link rel="stylesheet" type="text/css" href="components/bootstrap.css">
 		<!-- <link rel="stylesheet" type="text/css" href="components/msgConfig.css"> -->
@@ -75,14 +76,7 @@
 
 	<!-- Google tag (gtag.js) -->
 	<!-- google analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4GPGZ5DFP8"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'G-4GPGZ5DFP8');
-	</script>
 
 	<script type="text/javascript">
 	   (function(){
