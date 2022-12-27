@@ -12,14 +12,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="components/jquery.js"></script>
     <script src="includes/processContactForm.inc.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GPGZ5DFP8"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-4GPGZ5DFP8');
-	</script>
+    
 
     <?php require_once "includes/component.inc.php" ?>
 

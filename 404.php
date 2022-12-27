@@ -7,14 +7,7 @@
 	<?php require_once "includes/style.inc.php"?>
 	<script src="includes/manageSpinner.inc.js"></script>
 	<title>404 (Not Found)</title>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4GPGZ5DFP8"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-4GPGZ5DFP8');
-	</script>
+	
 </head>
 
 <body class="container-fluid p-0 d-flex align-items-center justify-content-center m-auto flex-column" id="body" style="background: lightskyblue;">

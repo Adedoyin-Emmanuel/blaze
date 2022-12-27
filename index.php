@@ -6,14 +6,7 @@
 
 	<?php require_once "includes/style.inc.php"?>
 	<script src="includes/manageSpinner.inc.js"></script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4GPGZ5DFP8"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-4GPGZ5DFP8');
-	</script>
+	
 	<title>Blaze</title>
 </head>
 
