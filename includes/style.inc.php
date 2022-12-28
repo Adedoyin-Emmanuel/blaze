@@ -74,7 +74,7 @@
 
         }
 
-        ul.header > li.nav-item:hover {
+        /* ul.header > li.nav-item:hover {
             background: lightblue;
             outline: none;
             border-radius: 20px;
@@ -86,7 +86,7 @@
         ul.header > li.nav-item > a:hover{
           border: none;
           outline: none;
-        }
+        } */
 
 		#myCarousel{
 			overflow-x:hidden;
