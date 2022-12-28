@@ -10,7 +10,7 @@
     <?php require_once "includes/style.inc.php" ?>
     <script src="includes/blazeForm.inc.js"></script>
     
-    <title>Blaze</title>
+    <title>Blaze For Developers</title>
 
     <style>
         @media (max-width:567.98px) {

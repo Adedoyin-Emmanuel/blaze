@@ -8,6 +8,9 @@
 	<script src="includes/manageSpinner.inc.js"></script>
 	
 	<title>Blaze</title>
+	<meta name="author" content="Adedoyin Emmanuel Adeniyi">
+	<meta name="keyword" content="A web app that helps to bootstrap development, kickstart your projects today by using blaze, software that opens multiple software, software development, next big thing, bootstraping desktop applications, a software that opens multiple softwares"/>
+	<meta name="keyword" content="blaze, full stack application, php, php project, php programming, bootstrap project, bootstraping development blaze web app, BlazeWebApp, BlazeWeb, Blaze, multiple software opener"/>
 </head>
 
 <body class="container-fluid p-0 d-flex align-items-center justify-content-center m-auto flex-column" id="body" style="background: lightskyblue;">
