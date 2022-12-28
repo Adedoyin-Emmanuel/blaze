@@ -63,6 +63,15 @@
 				justify-content: center;
 			}
 
+			.lost-btn,.home-btn{
+				transition: .7s;
+			}
+
+			.lost-btn:hover,.home-btn:hover{
+				background:lightskyblue;
+				border:2px solid white;
+			}
+
 	</style>
 
 	<script>

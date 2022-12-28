@@ -29,8 +29,8 @@
 		<img src="logo.png" class="img-fluid logo" height="90" width="90" id="logoImg">
 
 	</div>
-	<button class="text-capitalize text-center btn btn-dark bg-dark-c my-5 " id="getStarted">
-		<span class="spinner-border spinner-border-sm d-none" id="btnSpinner"></span>
+	<button class="text-capitalize text-center btn btn-light home-btn my-5 " id="getStarted">
+		<span class="spinner-border spinner-border-sm d-none text-light" id="btnSpinner"></span>
 	get started</button>
 
 </body>

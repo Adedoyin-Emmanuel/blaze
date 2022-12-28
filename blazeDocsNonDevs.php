@@ -79,8 +79,8 @@
        <p class="text-danger">Please not it isn't mandatory to do this for all 6 applications, you can configure for at least 2 different softwares!</p>
     </section>
 
-    <button class="btn btn-lg bg-cs">
-      <a href="blazeNonDev.php" class="text-capitalize text-light">use blaze!</a>
+    <button class="btn  bg-cs mx-3 my-3">
+      <a href="blazeNonDev.php" class="text-capitalize text-light text-decoration-none">use blaze!</a>
     </button>
 
 

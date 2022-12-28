@@ -12,7 +12,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="components/jquery.js"></script>
     <script src="includes/processContactForm.inc.js"></script>
-    
 
     <?php require_once "includes/component.inc.php" ?>
 

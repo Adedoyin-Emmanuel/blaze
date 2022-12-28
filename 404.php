@@ -30,8 +30,8 @@
 
 	</div>
 
-	<h5 class="text-center fs-5 p-md-1 p-sm-2 p-2">It appears that you are lost! <a href="homePage.php" class="">Home</a></h5>
-
-
+	<h5 class="text-center fs-5 p-md-1 p-sm-2 p-2">It appears that you are lost!</h5>
+	<br/>
+	<button class="btn btn-light text-capitalize lost-btn" id="getStarted"><a href="homePage.php" class="text-decoration-none text-dark">Home</a></button>
 </body>
 </html>
