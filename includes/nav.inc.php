@@ -40,7 +40,7 @@
 
 
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 25px;}
+  .sidenav a {font-size: 18px;}
 
   .sidenav::-webkit-scrollbar{
     width:5px;
@@ -111,7 +111,7 @@
 
 <ul class="nav d-flex align-items-start justify-content-start px-3 header" style=" background: lightskyblue;">
 <span class="                                                                           text-light text-center p-1 my-1  rounded-1 d-md-none" style="cursor:pointer; width:40px; height:40px; font-size:20px; background: lightblue; border:1px solid #fff" onclick="openNav()">&#9776</span>
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav overflow-hidden">
   
   <a href="javascript:void(0)" class="closebtn  text-center text-danger" onclick="closeNav()">&times;</a>
 
@@ -166,7 +166,7 @@
   </li>
 
   <li class="nav-item py-3 modes" id="mode">
-    <a class="nav-link text-capitalize text-light px-3"  href="#">
+    <a class="nav-link text-capitalize text-light px-3"  href="blaze.php">
 
 
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lamp mx-2" viewBox="0 0 16 16">
@@ -177,7 +177,7 @@
   </li>
 
      <li class="nav-item py-3">
-    <a class="nav-link text-capitalize text-light px-3" id="support" href="#">
+    <a class="nav-link text-capitalize text-light px-3" id="support" href="blazeNonDev.php">
 
          
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share mx-2" viewBox="0 0 16 16">
@@ -240,7 +240,7 @@
             </li>
 
               <li class="nav-item big_screen modes">
-                  <a class="nav-link  text-capitalize text-light" style="border:none; outline:none">
+                  <a class="nav-link  text-capitalize text-light" style="border:none; outline:none" href="blaze.php">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lamp mx-2" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M5.04.303A.5.5 0 0 1 5.5 0h5c.2 0 .38.12.46.303l3 7a.5.5 0 0 1-.363.687h-.002c-.15.03-.3.056-.45.081a32.731 32.731 0 0 1-4.645.425V13.5a.5.5 0 1 1-1 0V8.495a32.753 32.753 0 0 1-4.645-.425c-.15-.025-.3-.05-.45-.08h-.003a.5.5 0 0 1-.362-.688l3-7ZM3.21 7.116A31.27 31.27 0 0 0 8 7.5a31.27 31.27 0 0 0 4.791-.384L10.171 1H5.83L3.209 7.116Z"/>
@@ -250,7 +250,7 @@
             </li>
 
               <li class="nav-item big_screen">
-                  <a class="nav-link  text-capitalize text-light" style="border:none; outline:none">
+                  <a class="nav-link  text-capitalize text-light" style="border:none; outline:none" href="blazeNonDev.php">
 
                            
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share mx-2" viewBox="0 0 16 16">

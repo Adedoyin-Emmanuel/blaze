@@ -38,7 +38,7 @@
     </style>
 </head>
 
-<body id="body" style="overflow-x: hidden;">
+<body id="body" style="overflow-x:hidden;">
 
     <?php require_once "includes/nav.inc.php";?>
     <div  id="spinner" class="">
@@ -80,7 +80,7 @@
 
 
 <!-- second hero section -->
-  <div id="myCarousel" class="carousel slide bg-cs-caurosel" data-bs-ride="carousel" data-bs-config='{"interval":2000,"ride":carousel}'>
+  <div id="myCarousel" class="carousel slide bg-cs-caurosel" data-bs-ride="carousel" data-bs-config='{"interval":2000,"ride":carousel}' style="overflow-x: hidden;">
     <div class="carousel-indicators" >
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>

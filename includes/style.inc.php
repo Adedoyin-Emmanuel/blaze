@@ -88,6 +88,10 @@
           outline: none;
         }
 
+		#myCarousel{
+			overflow-x:hidden;
+		}
+
 
 
     }
