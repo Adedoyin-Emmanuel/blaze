@@ -4,28 +4,20 @@
 					rem start the code editor by default
 				
 
-								rem code editor => sublime text
-								rem enter the system root directory
-								cd /
+								rem code editor => visual studio
 
-								cd Program Files\Sublime Text
+
 
 								rem start the code editor
 
-								start sublime_text.exe
-
+								start code
 							 
 
 					rem start the user's browser choice next
 
 				
 
-									    rem client default browser => chrome
-										cd /
-
-										cd Program Files\Google\Chrome\Application
-
-										start chrome.exe
+									   
 
 									 
 

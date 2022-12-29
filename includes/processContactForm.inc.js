@@ -1,11 +1,11 @@
 $(document).ready(($)=>{
 	$.noConflict();
 
-	$("form").on("submit",(e)=>{
+	$("#blaze-contact-form").on("submit",(e)=>{
 
 		e.preventDefault();
 
-		const $form = document.querySelector("form");
+		const $form = document.querySelector("#blaze-contact-form");
 		
 		//disable the button
 		const $submit_btn = document.getElementById("submit_btn");

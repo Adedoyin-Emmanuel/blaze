@@ -38,6 +38,7 @@ $(document).ready(($)=>{
 						showConfirmButton:true,
 						showCancelButton:true,
 						confirmButtonText:"Regenerate",
+						cancelButtonColor:"tomato"
 						
 
 					});
