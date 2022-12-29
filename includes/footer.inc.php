@@ -27,9 +27,9 @@
       <div class="col-6 col-md-2 mb-3">
         <h5 class="fs-5 text-uppercase py-3" style="font-weight:bold">About Us</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">What's Blaze</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Developers</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contribute</a></li>
+          <li class="nav-item mb-2"><a href="about.php" class="nav-link p-0 text-muted">What's Blaze</a></li>
+          <li class="nav-item mb-2"><a href="https://facebook.com/adedoyin.emmanuel.180" class="nav-link p-0 text-muted"> Developers</a></li>
+          <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Contribute</a></li>
           </ul>
       </div>
 
@@ -37,22 +37,22 @@
       <div class="col-6 col-md-2 mb-3">
         <h5 class="fs-5 text-uppercase py-3" style="font-weight:bold">resources</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-capitalize">Get Blaze App</a></li>
+          <li class="nav-item mb-2"><a href="blaze.php" class="nav-link p-0 text-muted text-capitalize">Get Blaze App</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Community</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-capitalize">Docs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">resources</a></li>
+          <li class="nav-item mb-2"><a href="blazeDocs.php" class="nav-link p-0 text-muted text-capitalize">Docs</a></li>
+          <li class="nav-item mb-2"><a href="blazeDocs.php" class="nav-link p-0 text-muted">resources</a></li>
          </ul>
       </div>
 
        <div class="col-6 col-md-2 mb-3">
         <h5 class="fs-5 text-uppercase py-3" style="font-weight:bold">company</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-capitalize">About us</a></li>
+          <li class="nav-item mb-2"><a href="about.php" class="nav-link p-0 text-muted text-capitalize">About us</a></li>
      
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-capitalize">Our impact</a></li>
+          <li class="nav-item mb-2"><a href="about.php" class="nav-link p-0 text-muted text-capitalize">Our impact</a></li>
         
        
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-capitalize">Contact us</a></li>
+          <li class="nav-item mb-2"><a href="homePage.php" class="nav-link p-0 text-muted text-capitalize">Contact us</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-capitalize">trust, safety & security</a></li>
           
          </ul>
