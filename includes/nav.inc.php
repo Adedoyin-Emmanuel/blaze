@@ -101,9 +101,15 @@
     }
 
     .closebtn{
-        transform:translateX(-10px);
+        
+      
+      transform:translateX(-10px);
 		}
-   
+
+    
+    #newsletter{
+      transform: translateY(-30px);
+    }
 
 </style>
 <nav class="hor-nav w-100  " style="position:fixed; width:100%; z-index:1000;">
@@ -187,6 +193,15 @@
     Blaze For Non devs</a>
   </li>
 
+  <li class="nav-item py-3">
+  <div class="px-2">
+      <img  src="logo.png" width="40" height="15" class="mx-1 px-2"/>
+      
+    </div>
+    <a class="nav-link text-capitalize text-light px-5 mx-1" id="newsletter" href="testForm.php">
+
+    join our newsletter</a>
+  </li>
 
 
 

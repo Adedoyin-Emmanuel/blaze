@@ -1,4 +1,4 @@
-<script src="includes/addSub.inc.js"></script>
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   
   <symbol id="facebook" fill="currentColor" viewBox="0 0 16 16">
@@ -19,9 +19,7 @@
 
 
 
-<!-- <div class="b-example-divider"></div>
 
- -->
 <div class="container-fluid p-3"  data-aos="fade-down" data-aos-delay="10"
       data-aos-duration="1000">
   <footer class="py-5">
@@ -62,14 +60,12 @@
 
 
       <div class="col-md-5 offset-md-1 mx-0 my-md-2 my-5 py-3">
-        <form id="subscriber-form">
+        <form>
           <h5 class="fs-5 text-capitalize text-md-center text-left py-md-2 py-3" style="font-weight:bold;">Subscribe to our newsletter</h5>
           <p>Monthly digest of what's new and exciting from us.</p>
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <p class="sub-validate text-captalize text-center m-auto text-muted">subscriber added successfully!</p>
             <label for="newsletter1" class="visually-hidden">Email address</label>
-           <input id="newsletter1" type="email" class="form-control p-3  m-auto " placeholder="Email address" name="sub-email">
-            <button class="btn btn-primary bg-cs border-0 my-md-3 my-2" type="submit" name="add-sub">Subscribe</button>
+            <button class="btn btn-primary bg-cs border-0 my-md-3 my-2" type="button"><a href="testForm.php" class="text-capitalize text-center text-decoration-none text-light">Subscribe</a></button>
           </div>
         </form>
       </div>
@@ -110,10 +106,9 @@ const $defaultYear="2020";
 
 var $copyright = $("#copyright");
 
-
-$copyright.html(`&copy;  Blaze ${$currentYear}. All rights reserved.`);
-
-
+$copyright.html(`
+&copy;  Blaze ${$currentYear}. All rights reserved.
+`);
 
 
 // const $footer = $("footer > ul > li.nav-link").hover(()=>{
