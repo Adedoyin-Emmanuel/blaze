@@ -184,6 +184,14 @@
                     <input type="checkbox" name="terminal_start" class="form-check-input"> start CMD (command Prompt) / Terminal by default
                 </div>
 
+                <div class="form-group my-4">
+                    <label for="browserType" class="text-capitalize py-2">
+                       Windows powershell setup
+                    </label>
+                    <br/>
+
+                    <input type="checkbox" name="terminal_start" class="form-check-input"> start CMD (command Prompt) / Terminal by default
+                </div>
 
 
 
@@ -194,7 +202,7 @@
 
                 <div class="form-group my-2">
 
-                    <button class="btn btn-danger text-center text-capitalize" name="submit" id="submit">
+                    <button class="btn btn-primary text-center text-capitalize" name="submit" id="submit">
                         <span class="spinner-border spinner-border-sm  bg-primary d-none" id="spinner"></span>
                         Generate Blaze File
                     </button>

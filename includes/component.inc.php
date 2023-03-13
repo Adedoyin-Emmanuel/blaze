@@ -97,7 +97,22 @@
 				background:lightskyblue;
 				border:2px solid white;
 			}
+			
 
+			#submit
+			{
+				background:lightskyblue;
+				outline:none !important;
+				border: none !important;
+
+
+			}
+
+			#submit:hover{
+                background:lightskyblue;
+				opacity:.7;
+				cursor:pointer;
+            }
 			
 
 	</style>
