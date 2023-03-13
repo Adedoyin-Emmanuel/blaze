@@ -2,3 +2,6 @@
 *.exe linguist-vendored
 *.bat linguist-vendored
 *.hack linguist-vendored
+*.css linguist-vendored
+*html linguist-vendored
+*.map linguist-vendored
