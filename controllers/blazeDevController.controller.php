@@ -39,8 +39,11 @@
 			protected $client_version_control_system;
 			protected $client_default_terminal_start;
 			protected $client_default_git_start;
+			protected $client_default_powershell_start;
 			protected $client_multiple_browser_tabs_start;
 
+
+			/*the following properties start with $blaze are like the template code for the batch file generation at the final download stage*/
 			protected $blaze_file_generate_version_control_system;
 			protected $blaze_file_generate_version_control_system_directory;
 			protected $blaze_file_generate_version_control_system_exe;
@@ -48,11 +51,11 @@
 
 			protected $blaze_file_generate_default_terminal;
 			protected $blaze_file_generate_default_git_start;
-
+			protected $blaze_file_generate_default_powershell_start;
 
 
 			
-		public function __construct($operating_system, $code_editor, $browser = "", $server_type = "",$client_version_control_system = "",$client_default_terminal_start ="",$client_default_git_start = "",$client_multiple_browser_tabs_start = ""){
+		public function __construct($operating_system, $code_editor, $browser = "", $server_type = "",$client_version_control_system = "",$client_default_terminal_start ="",$client_default_git_start = "", $client_default_powershell_start = "", $client_multiple_browser_tabs_start = ""){
 
 			#important BLAZE properties
 			if(empty($operating_system) OR empty($code_editor)){
@@ -96,6 +99,7 @@
 				$this->client_version_control_system = $client_version_control_system;
 				$this->client_default_terminal_start =$client_default_terminal_start;
 				$this->client_default_git_start = $client_default_git_start;
+				$this->client_default_powershell_start = $client_default_powershell_start;
 				$this->client_multiple_browser_tabs_start = $client_multiple_browser_tabs_start;
 
 
@@ -380,6 +384,28 @@
 							}
 
 
+							#check the client's choic to start the windows powershell by default or not
+							switch($this->client_default_powershell_start)
+							{
+								case 1:
+									#start the windows powershell by default when blaze launch!
+									$this->blaze_file_generate_default_powershell_start .= "
+										start powershell	
+									";
+									break;
+
+								case 0:
+									#pass, don't start the windows powershell
+									$this->blaze_file_generate_default_powershell_start .= "";
+									break;
+
+								default:
+									#pass
+									$this->blaze_file_generate_default_powershell_start .= "";
+									break;
+							}	
+
+
 
 							#check the client's choice to start the git BASH by default or not
 
@@ -657,7 +683,7 @@
 					$this->blaze_file = fopen($this->file_name,"w");
 
 					//concatenate all the respective blaze written code lines.
-					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type . " " .$this->blaze_file_generate_version_control_system . " ".$this->blaze_file_generate_default_terminal . " ".$this->blaze_file_generate_default_git_start . " ".$this->blaze_file_generate_default_websites;
+					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type . " " .$this->blaze_file_generate_version_control_system . " ".$this->blaze_file_generate_default_terminal . " ".$this->blaze_file_generate_default_git_start . " " . $this->blaze_file_generate_default_powershell_start . " ".$this->blaze_file_generate_default_websites;
 					fwrite($this->blaze_file, $this->ALL_BLAZE_CODE);
 
 					if(file_exists($this->saved_file_folder)){
@@ -677,7 +703,7 @@
 					$this->blaze_file = fopen($this->file_name,"w");
 
 					//concatenate all the respective blaze written code lines.
-					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type;
+					$this->ALL_BLAZE_CODE = $this->blaze_file_generate_code_editor ." ".$this->blaze_file_generate_browser_type." ".$this->blaze_file_generate_server_type . " " .$this->blaze_file_generate_version_control_system . " ".$this->blaze_file_generate_default_terminal . " ".$this->blaze_file_generate_default_git_start . " " . $this->blaze_file_generate_default_powershell_start . " ".$this->blaze_file_generate_default_websites;
 					fwrite($this->blaze_file, $this->ALL_BLAZE_CODE);
 
 					if(file_exists($this->saved_file_folder)){
