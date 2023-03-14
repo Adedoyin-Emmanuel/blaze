@@ -16,6 +16,7 @@ require_once "../controllers/blazeDevController.controller.php";
 	$version_control_system = $_POST["version_control_system"];
 
 	$default_webistes_launch = $_POST["default_sites"] OR "";
+	$start_powershell_by_default = $_POST["powershell_start"];
 
 
 
@@ -333,6 +334,21 @@ if(!empty($client_browser)){
 		}
 
 
+		#check fir the client's response for the Powershell default launch
+
+		$start_powershell_by_default_value = 0;
+
+		if(!empty($start_powershell_by_default))
+		{
+			if($start_powershell_by_default == "on")
+			{
+				$start_powershell_by_default_value = 1;
+			}
+			else{
+				$start_powershell_by_default_value = 0;
+			}
+		}
+
 
 
 //main blaze logic
@@ -340,7 +356,7 @@ if(!empty($client_browser)){
 
 	use Blaze\BlazeGen\BlazeGenerator;
 	 
-	$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser,$client_server,$client_version_control_system,$start_terminal_by_default_value,$start_git_by_default_value,$default_sites_to_open);
+	$BLAZE = new BlazeGenerator($client_operating_system, $client_code_editor,$client_browser,$client_server,$client_version_control_system,$start_terminal_by_default_value,$start_git_by_default_value,$start_powershell_by_default_value,$default_sites_to_open);
 
 
 	$file_generate_status = $BLAZE->generate_blaze_file();
