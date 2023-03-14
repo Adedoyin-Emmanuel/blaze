@@ -190,7 +190,7 @@
                     </label>
                     <br/>
 
-                    <input type="checkbox" name="powershell_start" class="form-check-input"> start Powershell (by default)
+                    <input type="checkbox" name="powershell_start" class="form-check-input "> start Powershell (by default)
                 </div>
 
 
