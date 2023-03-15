@@ -152,7 +152,10 @@
 		font-weight: 500;
 	}
 
-
+	.small-text
+	{
+		font-size:0.9rem;
+	}
 
 	.bg-dark {
 		background-color: #212529 !important;

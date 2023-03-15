@@ -20,7 +20,7 @@ $(document).ready(($)=>{
 						showCancelButton:false,
                         icon:"success",
 						confirmButtonText:"Download Blaze File",
-						confirmButtonColor:"dodgerblue",
+						confirmButtonColor:"lightskyblue",
 						allowOutsideClick:false,
 						allowEscapeKey:false
 					}).then((willProceed)=>{

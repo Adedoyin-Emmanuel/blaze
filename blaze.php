@@ -65,7 +65,7 @@
        <br/>
          <section class="my-4 text-capitalize text-md-center">
        
-            Note, before you configure blaze below, please ensure you have read the <a href="blazeDocs.php">docs</a>.
+            Note, before you configure blaze below, please ensure you have read the <a href="blazeDocs.php" style="text-decoration-color: lightskyblue; color:lightskyblue;">docs</a>.
          </section>
         <section class="use_blaze text-capitalize" id="blaze">
 
@@ -110,7 +110,7 @@
 
                 <!-- browser setup -->
                 <div class="form-group my-4">
-                    <label for="browserType" class="text-capitalize py-2">Select Browser *</label>
+                    <label for="browserType" class="text-capitalize py-2">Select Browser </label>
 
                     <select class="form-control " id="sel1" name="browser_type">
                         <option class="option px-2 text-capitalize text-center m-auto" value="0">-SELECT-</option>
@@ -184,13 +184,13 @@
                     <input type="checkbox" name="terminal_start" class="form-check-input"> start CMD (command Prompt) / Terminal by default
                 </div>
 
-                <div class="form-group my-4">
+                <div class="form-group my-4 text-small">
                     <label for="browserType" class="text-capitalize py-2">
                        Windows powershell setup
                     </label>
                     <br/>
 
-                    <input type="checkbox" name="powershell_start" class="form-check-input "> start Powershell (by default)
+                    <input type="checkbox" name="powershell_start" class="form-check-input"> start Powershell (by default)
                 </div>
 
 

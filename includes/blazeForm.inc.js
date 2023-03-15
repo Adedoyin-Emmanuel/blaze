@@ -20,7 +20,7 @@ $(document).ready(($)=>{
 						showCancelButton:false,
                         icon:"success",
 						confirmButtonText:"Download Blaze File",
-						confirmButtonColor:"dodgerblue",
+						confirmButtonColor:"lightskyblue",
 						allowOutsideClick:false,
 						allowEscapeKey:false
 					}).then((willProceed)=>{
@@ -34,6 +34,7 @@ $(document).ready(($)=>{
 						text:$xhttp.responseText,  
 						showConfirmButton:true,
 						showCancelButton:true,
+						confirmButtonColor:"lightskyblue",
 						confirmButtonText:"Regenerate",
 						cancelButtonColor:"tomato"
 						
@@ -41,7 +42,10 @@ $(document).ready(($)=>{
 					}).then((willProceed)=>{
 						//scroll to the top
 						
-
+						window.scrollTo({
+							top:0,
+							behavior: "smooth"
+						});
 					})
 				}
 			}

@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0);
+
 
 require_once "../controllers/blazeDevController.controller.php";
 
@@ -13,10 +15,10 @@ require_once "../controllers/blazeDevController.controller.php";
 
 	$start_terminal_by_default= @$_POST["terminal_start"] OR "";
 	$start_git_by_default = @$_POST["git_start"] OR "";
-	$version_control_system = $_POST["version_control_system"];
+	$version_control_system = @$_POST["version_control_system"];
 
-	$default_webistes_launch = $_POST["default_sites"] OR "";
-	$start_powershell_by_default = $_POST["powershell_start"];
+	$default_webistes_launch = @$_POST["default_sites"] OR "";
+	$start_powershell_by_default = @$_POST["powershell_start"]  OR "";
 
 
 
