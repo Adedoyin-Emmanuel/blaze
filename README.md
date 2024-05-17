@@ -34,3 +34,9 @@ Special thanks to [Robinson Honour](https://twitter.com/honour_can_code) for his
 ## Authors 🧑‍🦰
 
 1. Adedoyin Emmanuel Adeniyi [That's Me 😄](https://x.com/Emmysoft_Tm)
+
+If you love this project, you can give it a star 🌟. Thanks for reading. 😊. Follow me on **Github**, I ship cool stuffs. [Follow Me](https://github.com/adedoyin-emmanuel)
+
+```
+
+```
