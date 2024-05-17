@@ -29,7 +29,7 @@ Every form of contrubition is welcome, although I'm not making updates to this p
 
 ## Special Thanks 🙏
 
-Special thanks to [Robinson Honour](https://twitter.com/honour_can_code) for his hosting platform. PXXl Space. Pxxl space is a platform that provides 100% free web hosting services. You should totally check them out, they are shipping some cool stuffs. [PXXl Space](https://pxxl.space). You can also check blaze here [Blaze Website](https://blaze.pxxl.space)
+Special thanks to [Robinson Honour](https://x.com/honour_can_code) for his hosting platform. PXXl Space. Pxxl space is a platform that provides 100% free web hosting services. You should totally check them out, they are shipping some cool stuffs. [PXXl Space](https://pxxl.space). You can also check blaze here [Blaze Website](https://blaze.pxxl.space)
 
 ## Authors 🧑‍🦰
 
