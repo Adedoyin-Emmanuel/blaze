@@ -8,6 +8,17 @@
 
 I built Blaze about **2 years** ago when I was still using my Elder sis PC to write codes, then my primary language was **PHP**. It was quite fustrating to open **VsCode, Chrome tabs, Xampp or Wampp Server** and other softwares I use for development. So I thought of a way to automate the process of opening all these softwares at once, then I came up with Blaze. Blaze was built with **PHP** and **Batch Script**. Blaze was built to help developers and non developers to open multiple softwares at once.
 
+## Technologies 🖥️
+
+1. PHP (Frontend & Backend)
+2. Bootstrap & CSS
+3. Batch Script
+4. Jquery
+5. SweetAlert2
+6. ThreeDots Loader
+7. Animate CSS
+8. Ajax (For form submission and API Request)
+
 ## How It Works 🧠
 
 Although, if I were to build something like this now, I wouldn't use this approach because I've learned a lot between when I build **Blaze** and now. Blaze works by collecting the user preference though a form, then the form data is sent to the server, the server then process the data and save it to a **Batch File**. The batch file is downloaded with a **Blaze.exe** together in a `.zip` file, after unzipping there is a **Blaze.exe** that once executed, it will run the **Blaze.bat** script, which will open the softwares and open the chrome tabs as specified by the user or any other configurations the user entered when filling the form.
